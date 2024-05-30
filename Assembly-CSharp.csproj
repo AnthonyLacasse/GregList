@@ -88,7 +88,6 @@
     <None Include="Assets\Residential Buildings Pack\Source\Shader\LayeredDirt.shader" />
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\FogScattering.shader" />
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\EmptySky.shader" />
-    <None Include="Assets\Azure[Sky] Dynamic Skybox\_Beta\Read-Me.txt" />
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\Transparent\ParticleMultiply.shader" />
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\WeatherParticles.shader" />
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\StaticClouds.shader" />
@@ -838,6 +837,9 @@
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
@@ -846,9 +848,6 @@
     </Reference>
     <Reference Include="Unity.Mathematics">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
