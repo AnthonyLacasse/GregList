@@ -60,7 +60,6 @@
   <ItemGroup>
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Editor\AzureEnvironmentControllerInspector.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Editor\AzureWeatherProfileInspector.cs" />
-    <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Editor\AzureSkyRenderControllerInspector.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Editor\AzureOverrideObjectInspector.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Editor\AzureEffectsControllerInspector.cs" />

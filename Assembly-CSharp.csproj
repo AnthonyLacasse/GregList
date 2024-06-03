@@ -65,7 +65,6 @@
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureWeatherZone.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureTimeController.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scenes\_Utilities\AzureFlyCamera.cs" />
-    <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureShaderUniforms.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureWeatherProfile.cs" />
@@ -84,14 +83,12 @@
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureThunderEffect.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Residential Buildings Pack\Readme.txt" />
-    <None Include="Assets\Residential Buildings Pack\Source\Shader\LayeredDirt.shader" />
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\FogScattering.shader" />
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\EmptySky.shader" />
+    <None Include="Assets\ModularHousePack1\Art\Shaders\StandardDoubleSide.shader" />
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\Transparent\ParticleMultiply.shader" />
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\WeatherParticles.shader" />
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\StaticClouds.shader" />
-    <None Include="Assets\Residential Buildings Pack\SRP_Upgrade\ReadMe.txt" />
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\DynamicClouds.shader" />
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\Transparent\UnlitAlpha.shader" />
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\Transparent\ParticleAlphaBlend.shader" />
