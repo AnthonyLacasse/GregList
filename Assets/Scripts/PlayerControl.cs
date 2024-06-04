@@ -35,7 +35,7 @@ public class PlayerControl : MonoBehaviour
         Vector2 movement = m_InputManager.GetPlayerMovement();
         Vector3 move = new Vector3(movement.x, 0, movement.y);
         move = m_PlayerView.forward * move.z + m_PlayerView.right * move.x;
-        move.y = 0;
+        move.y = 0; // bug ici, reverifier
         m_Controller.Move(move * speed * Time.deltaTime);
     }
 }
