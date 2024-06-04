@@ -58,8 +58,11 @@
     <Analyzer Include="C:\Program Files\Unity2022.3.5f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AtmosphericHouse\Scripts\Editor\MaterialSwapper\MatSwap.cs" />
+    <Compile Include="Assets\AtmosphericHouse\Scripts\Editor\AutoSnap.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Editor\AzureEnvironmentControllerInspector.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Editor\AzureWeatherProfileInspector.cs" />
+    <Compile Include="Assets\AtmosphericHouse\Scripts\Editor\SwapPrefabEditor.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Editor\AzureSkyRenderControllerInspector.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Editor\AzureOverrideObjectInspector.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Editor\AzureEffectsControllerInspector.cs" />
