@@ -58,6 +58,7 @@
     <Analyzer Include="C:\Program Files\Unity2022.3.5f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Plants.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureSkyRenderController.cs" />
     <Compile Include="Assets\Scripts\CinemachinePOVExtension.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureUtilities.cs" />
@@ -65,8 +66,8 @@
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureWeatherZone.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureTimeController.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scenes\_Utilities\AzureFlyCamera.cs" />
-    <Compile Include="Assets\Scripts\Interactible.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureShaderUniforms.cs" />
+    <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureWeatherProfile.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureEnvironmentController.cs" />
@@ -77,11 +78,14 @@
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureOverrideObject.cs" />
     <Compile Include="Assets\Scripts\InputManager.cs" />
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
+    <Compile Include="Assets\INTERFACE\HUD.cs" />
+    <Compile Include="Assets\INTERFACE\FirstPersonCamera.cs" />
     <Compile Include="Assets\Scripts\Exercices\CinemachineScript.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scenes\_Utilities\AzureSliderToTime.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureOverridePropertiesManually.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureEffectsController.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureThunderEffect.cs" />
+    <Compile Include="Assets\Scripts\HUD.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\FogScattering.shader" />
@@ -91,11 +95,15 @@
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\Transparent\ParticleMultiply.shader" />
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\WeatherParticles.shader" />
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\StaticClouds.shader" />
+    <None Include="Assets\DownloadableAssets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\DownloadableAssets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\DynamicClouds.shader" />
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\Transparent\UnlitAlpha.shader" />
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\Transparent\ParticleAlphaBlend.shader" />
+    <None Include="Assets\DownloadableAssets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\AtmosphericHouse\BuiltIn_RP\BuiltIn_Shaders\Standard_doublesided_cutout.shader" />
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\Transparent\AzureFogCore.cginc" />
+    <None Include="Assets\DownloadableAssets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\AtmosphericHouse\BuiltIn_RP\BuiltIn_Shaders\Standard_doublesided_transparent.shader" />
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\Transparent\ParticleAdd.shader" />
   </ItemGroup>
