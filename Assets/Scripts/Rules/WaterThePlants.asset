@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9879b6d36b335bb4e98496f6ec14930c, type: 3}
+  m_Name: WaterThePlants
+  m_EditorClassIdentifier: 
+  RuleDescription:
+  - 
+  MinorModifiers:
+  - {fileID: 0}
+  Spawnpoints: []
+  prefabModels: []
+  Count: 0
+  Completed: 0

@@ -5,52 +5,52 @@ using UnityEngine.Diagnostics;
 
 public class InputManager : MonoBehaviour
 {
-    private static InputManager _Instance;
+    private static InputManager m_Instance;
 
     public static InputManager Instance
     {
         get
         {
-            return _Instance;
+            return m_Instance;
         }
     }
     
     
-    private PlayerMovement playerMovement;
+    private PlayerMovement m_playerMovement;
 
     private void Awake()
     {
-        if (_Instance != null && _Instance != this)
+        if (m_Instance != null && m_Instance != this)
         {
             Destroy(this.gameObject);
         }
         else
         {
-            _Instance = this;
+            m_Instance = this;
         }
 
-        playerMovement = new PlayerMovement();     
+        m_playerMovement = new PlayerMovement();     
         
     }
 
     private void OnEnable()
     {
-        playerMovement.Enable();
+        m_playerMovement.Enable();
     }
 
     private void OnDisable()
     {
-        playerMovement.Disable();
+        m_playerMovement.Disable();
     }
 
     public Vector2 GetPlayerMovement()
     {
-        return playerMovement.Player.Movement.ReadValue<Vector2>();
+        return m_playerMovement.Player.Movement.ReadValue<Vector2>();
     }
 
     public Vector2 GetMouseDelta()
     {
-        return playerMovement.Player.Look.ReadValue<Vector2>();
+        return m_playerMovement.Player.Look.ReadValue<Vector2>();
     }
 
 

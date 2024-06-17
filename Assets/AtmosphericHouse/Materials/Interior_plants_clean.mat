@@ -2,16 +2,29 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Interior_plants_clean
   m_Shader: {fileID: 4800000, guid: 8b88f9791d243d34ba7ab739bfb366a2, type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON _BLENDMAINNORMAL_ON _DOUBLESIDED_ON _MASKMAP _MATERIAL_FEATURE_TRANSMISSION
-    _METALLICGLOSSMAP _NORMALMAP _NORMALMAP_TANGENT_SPACE _SOURCE_SPECULARALPHA _THICKNESSMAP
-    _USEBASECOLORALPHA_ON _USEMETALLICMAP_ON
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _USEMETALLICMAP_ON
+  m_InvalidKeywords:
+  - _ALPHATEST_ON
+  - _BLENDMAINNORMAL_ON
+  - _DOUBLESIDED_ON
+  - _MASKMAP
+  - _MATERIAL_FEATURE_TRANSMISSION
+  - _METALLICGLOSSMAP
+  - _NORMALMAP
+  - _NORMALMAP_TANGENT_SPACE
+  - _SOURCE_SPECULARALPHA
+  - _THICKNESSMAP
+  - _USEBASECOLORALPHA_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
@@ -23,6 +36,7 @@ Material:
   - TransparentDepthPrepass
   - TransparentDepthPostpass
   - TransparentBackface
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -154,6 +168,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AORemapMax: 1
     - _AORemapMin: 0.44455668
@@ -313,10 +328,9 @@ Material:
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.023228897, g: 0.5471698, b: 0.024394125, a: 1}
     - _DetailColor: {r: 1, g: 1, b: 1, a: 0}
-    - _DiffusionProfileAsset: {r: 6.669458e-36, g: 5.261928e+31, b: -1.1107148e+32,
-        a: 2.9494916e-23}
+    - _DiffusionProfileAsset: {r: 6.669458e-36, g: 5.261928e+31, b: -1.1107148e+32, a: 2.9494916e-23}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
@@ -330,6 +344,7 @@ Material:
     - _UVDetailsMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
 --- !u!114 &236954989417062402
 MonoBehaviour:
   m_ObjectHideFlags: 11
