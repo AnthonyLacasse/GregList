@@ -32,7 +32,7 @@ public class TimeManager : MonoBehaviour
         
     }
 
-    private void GetTime()
+    public void GetTime()
     {
 
     }

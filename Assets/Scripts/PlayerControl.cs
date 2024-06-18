@@ -2,22 +2,26 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
-    [SerializeField] public float m_Speed = 6.0F;
-    [SerializeField] public float m_CrounchedSpeed = 3.5f;
-    [SerializeField] public float m_JogSpeed = 9f;
+    [SerializeField] private float m_Speed = 6.0F;
+    [SerializeField] private float m_CrounchedSpeed = 3.5f;
+    [SerializeField] private float m_JogSpeed = 9f;
+    [SerializeField] private float m_RayLenght = 1.5f;
+    [SerializeField] private Transform m_Head;
+    [SerializeField] private HUD m_HUD;
+
 
     private Interactable m_UsableObject;
 
-    private Vector3 m_MoveDirection = Vector3.zero;
+    //private Vector3 m_MoveDirection = Vector3.zero;
     private CharacterController m_Controller;
-    private Rigidbody m_Rigidbody;
+    
     private InputManager m_InputManager;
     private Transform m_PlayerView;
 
     private void Start()
     {
         m_Controller = GetComponent<CharacterController>();
-        m_Rigidbody = GetComponent<Rigidbody>();
+        
         m_InputManager = InputManager.Instance;
         m_PlayerView = Camera.main.transform;
     }
@@ -50,11 +54,13 @@ public class PlayerControl : MonoBehaviour
 
     private void UseObjects()
     {
+        Debug.DrawRay(m_Head.position, Camera.main.transform.forward * m_RayLenght, Color.red);
+        
         if (m_UsableObject != null)
         {
             m_UsableObject.InRange(false);
         }
-        if (Physics.Raycast(transform.position, Camera.main.transform.forward, out RaycastHit info, 0.65f))
+        if (Physics.Raycast(m_Head.position, Camera.main.transform.forward, out RaycastHit info, m_RayLenght))
         {
             Interactable interactableHit = info.collider.GetComponent<Interactable>();
 
@@ -64,19 +70,21 @@ public class PlayerControl : MonoBehaviour
             }
             else
             {
+                Debug.Log("Interactable in range");
                 m_UsableObject = interactableHit;
                 m_UsableObject.InRange(true);
+                m_HUD.DisplayPrompt(m_UsableObject.GetType());
             }
         }
         if (m_UsableObject == null)
         {
-            //Remove HUD prompt
+            m_HUD.HidePrompt();
         }
         else if (Input.GetMouseButtonDown(0))
         {
             m_UsableObject.Use();
             m_UsableObject = null;
-            //Remove HUD prompt
+            m_HUD.HidePrompt();
         }
     }
 }

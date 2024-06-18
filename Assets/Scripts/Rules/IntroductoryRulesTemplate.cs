@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 
 [CreateAssetMenu]
-public class IntroductoryRuleTemplate : ScriptableObject
+public class IntroductoryRuleTemplate : AbstractRule
 
 {
     public List<string> RuleDescription;
@@ -18,4 +18,5 @@ public class IntroductoryRuleTemplate : ScriptableObject
     public int Count;
 
     public bool Completed = false;
+
 }

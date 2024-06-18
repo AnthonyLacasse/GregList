@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,7 @@ using UnityEngine;
 public class Plants : MonoBehaviour, Interactable
 {
     Color initialColor;
+
     private bool m_CanBeWatered = true;
 
     private void Start()
@@ -30,7 +32,10 @@ public class Plants : MonoBehaviour, Interactable
         {
             m_CanBeWatered = false;
         }
+    }
 
-
+    InteractibleType Interactable.GetType()
+    {
+        return InteractibleType.PLANT;
     }
 }
