@@ -81,9 +81,10 @@
     <Compile Include="Assets\Scripts\Rules\AbstractRule.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureOverrideObject.cs" />
     <Compile Include="Assets\Scripts\InputManager.cs" />
-    <Compile Include="Assets\Scripts\TimeManager.cs" />
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
+    <Compile Include="Assets\INTERFACE\FirstPersonCamera.cs" />
     <Compile Include="Assets\Scripts\Exercices\CinemachineScript.cs" />
+    <Compile Include="Assets\Scripts\RulesManager.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scenes\_Utilities\AzureSliderToTime.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureOverridePropertiesManually.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureEffectsController.cs" />

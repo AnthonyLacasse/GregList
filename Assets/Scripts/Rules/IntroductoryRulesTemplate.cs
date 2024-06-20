@@ -13,10 +13,10 @@ public class IntroductoryRuleTemplate : AbstractRule
 
     public Transform[] Spawnpoints;
 
-    public GameObject[] prefabModels;
+    public GameObject[] PrefabModels;
 
-    public int Count;
+    public int TimeValue;
 
-    public bool Completed = false;
+    
 
 }
