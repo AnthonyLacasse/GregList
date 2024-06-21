@@ -14,16 +14,19 @@ public class PlayerControl : MonoBehaviour
 
     //private Vector3 m_MoveDirection = Vector3.zero;
     private CharacterController m_Controller;
-    
+
     private InputManager m_InputManager;
     private Transform m_PlayerView;
+    private Vector3 m_InitialSize;
+
 
     private void Start()
     {
         m_Controller = GetComponent<CharacterController>();
-        
+
         m_InputManager = InputManager.Instance;
         m_PlayerView = Camera.main.transform;
+        m_InitialSize = transform.localScale;
     }
 
     void Update()
@@ -35,11 +38,18 @@ public class PlayerControl : MonoBehaviour
     private void Move()
     {
         float speed = m_Speed;
+        Vector3 crouchedSize = m_InitialSize * 0.66f;
+
         if (Input.GetKey(KeyCode.LeftControl))
         {
             speed = m_CrounchedSpeed;
-            transform.position -= Vector3.up;
+            transform.localScale = crouchedSize;
         }
+        if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            transform.localScale = m_InitialSize;
+        }
+
         if (Input.GetKey(KeyCode.LeftShift))
         {
             speed = m_JogSpeed;
@@ -56,7 +66,7 @@ public class PlayerControl : MonoBehaviour
     private void UseObjects()
     {
         Debug.DrawRay(m_Head.position, Camera.main.transform.forward * m_RayLenght, Color.red);
-        
+
         if (m_UsableObject != null)
         {
             m_UsableObject.InRange(false);
@@ -67,7 +77,7 @@ public class PlayerControl : MonoBehaviour
 
             if (interactableHit == null)
             {
-               m_UsableObject = null;
+                m_UsableObject = null;
             }
             else
             {

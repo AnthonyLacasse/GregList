@@ -1,11 +1,9 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
 
 [CreateAssetMenu]
 public class IntroductoryRuleTemplate : AbstractRule
-
 {
     public List<string> RuleDescription;
 
@@ -17,6 +15,6 @@ public class IntroductoryRuleTemplate : AbstractRule
 
     public int TimeValue;
 
-    
-
+    public int VisitedRooms;
 }
+

@@ -1,13 +1,10 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Plants : MonoBehaviour, Interactable
+public class Plant : MonoBehaviour, Interactable
 {
     Color initialColor;
 
-    private bool m_CanBeWatered = true;
+    private bool m_CanInteract = true;
 
     private void Start()
     {
@@ -16,9 +13,10 @@ public class Plants : MonoBehaviour, Interactable
 
     public void InRange(bool inRange)
     {
-        if (inRange && m_CanBeWatered)
+        if (inRange && m_CanInteract)
         {
             GetComponent<Renderer>().material.color = Color.yellow;
+            
         }
         else //off
         {
@@ -28,9 +26,10 @@ public class Plants : MonoBehaviour, Interactable
 
     public void Use()
     {
-        if (m_CanBeWatered)
+        if (m_CanInteract)
         {
-            m_CanBeWatered = false;
+            //Implement watering plant counter
+            m_CanInteract = false;
         }
     }
 
