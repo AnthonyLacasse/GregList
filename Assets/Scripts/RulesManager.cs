@@ -8,12 +8,10 @@ public class RulesManager : MonoBehaviour
     private static RulesManager m_Instance;
 
     [SerializeField] private AzureTimeController m_Sky;
-    [SerializeField] private List<AbstractRule> m_Rules;
+    [SerializeField] private List<Rule> m_Rules;
+    
 
-
-
-   // private int m_CurrentRule = 0;
-
+    private int m_CurrentRule = 0;
 
 
     private int m_Hours = 8;
@@ -27,8 +25,6 @@ public class RulesManager : MonoBehaviour
         }
     }
 
-    private RulesManager m_RulesManager;
-
     private void Awake()
     {
         if (m_Instance != null && m_Instance != this)
@@ -39,18 +35,14 @@ public class RulesManager : MonoBehaviour
         {
             m_Instance = this;
         }
-
-
-        m_RulesManager = new RulesManager();
-        
     }
 
     public void ForwardTime(int hour, int minutes)
     {
-        
+
         m_Hours += hour;
         m_Minutes += minutes;
-        
+
 
         if (m_Hours >= 24)
         {
@@ -72,4 +64,5 @@ public class RulesManager : MonoBehaviour
     }
 
     
+
 }

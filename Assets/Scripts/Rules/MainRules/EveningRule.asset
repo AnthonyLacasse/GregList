@@ -10,12 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9879b6d36b335bb4e98496f6ec14930c, type: 3}
-  m_Name: WaterThePlants
+  m_Name: EveningRule
   m_EditorClassIdentifier: 
-  RuleDescription:
-  - 
-  MinorModifiers:
-  - {fileID: 0}
-  Spawnpoints: []
-  PrefabModels: []
-  TimeValue: 15
+  RuleDescription: []
+  MinorModifiers: []
+  TimeValue: 0
+  RoomsToVisit: 0
+  VisitedRooms: []
