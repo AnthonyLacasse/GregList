@@ -1,14 +1,20 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AzureSky;
-using UnityEngine.UIElements;
+
 
 public class RulesManager : MonoBehaviour
 {
     private static RulesManager m_Instance;
 
     [SerializeField] private AzureTimeController m_Sky;
+    [SerializeField] private List<AbstractRule> m_Rules;
+
+
+
+   // private int m_CurrentRule = 0;
+
+
 
     private int m_Hours = 8;
     private int m_Minutes = 0;
@@ -60,14 +66,10 @@ public class RulesManager : MonoBehaviour
         float timeLine = m_Hours + m_Minutes / 60;
 
         m_Sky.SetTimeline(timeLine);
+
+        //La documentation est vraiment vaste. La skybox possède son propre eventsystem. L'incrémentation des minutes ne fonctionne pas avec un code basique
+        //Je sais que je peux forcer la skybox à afficher une heure entière, je vais continuer de consulter la documentation 
     }
 
     
-
-        
-
-
-
-
-
 }

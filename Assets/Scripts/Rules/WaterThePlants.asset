@@ -17,6 +17,5 @@ MonoBehaviour:
   MinorModifiers:
   - {fileID: 0}
   Spawnpoints: []
-  prefabModels: []
-  Count: 0
-  Completed: 0
+  PrefabModels: []
+  TimeValue: 15

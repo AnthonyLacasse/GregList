@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,8 +14,8 @@ public class HUD : MonoBehaviour
 
     public void DisplayPrompt(InteractibleType type)
     {
-        m_InteractGroup.alpha = 1.0f;
         m_PromptImage.sprite = m_Sprites[(int)type]; 
+        m_InteractGroup.alpha = 1.0f;
     }
 
     public void HidePrompt()

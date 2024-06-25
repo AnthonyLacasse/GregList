@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 public enum InteractibleType
 {
     LIGHT,
@@ -22,8 +18,6 @@ public interface Interactable
 
     public void Use();
 
-
     public InteractibleType GetType();
-
 
 }
