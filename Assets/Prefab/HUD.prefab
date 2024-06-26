@@ -252,7 +252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_InteractGroup: {fileID: 6169850147718598680}
   m_Sprites:
-  - {fileID: 21300000, guid: c4926939efdee334ca6e84e11531d06c, type: 3}
+  - {fileID: 21300000, guid: 5d3e42a3a3bad0440a756a6ac23b6c00, type: 3}
   - {fileID: 21300000, guid: 9b99dba6003fffb4f99ac86abdfe2a93, type: 3}
   - {fileID: 21300000, guid: c4926939efdee334ca6e84e11531d06c, type: 3}
   - {fileID: 21300000, guid: c4926939efdee334ca6e84e11531d06c, type: 3}

@@ -1,3 +1,5 @@
+using System;
+using UnityEditor;
 using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
@@ -19,6 +21,7 @@ public class PlayerControl : MonoBehaviour
     private Transform m_PlayerView;
     private Vector3 m_InitialSize;
 
+    public Action<GameObject> m_VisitingRoom;
 
     private void Start()
     {
@@ -95,6 +98,14 @@ public class PlayerControl : MonoBehaviour
             m_UsableObject.Use();
             m_UsableObject = null;
             m_HUD.HidePrompt();
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Room"))
+        {
+            m_VisitingRoom?.Invoke(other.gameObject);
         }
     }
 }
