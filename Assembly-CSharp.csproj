@@ -67,9 +67,14 @@
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureWeatherZone.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureTimeController.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scenes\_Utilities\AzureFlyCamera.cs" />
+    <Compile Include="Assets\AtmosphericHouse\Scripts\SimplePlayerController.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureShaderUniforms.cs" />
+    <Compile Include="Assets\AtmosphericHouse\Scripts\LightOptimize.cs" />
     <Compile Include="Assets\Scripts\DisposableObject.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
+    <Compile Include="Assets\AtmosphericHouse\Scripts\PrefabSwapper\SwapPrefab.cs" />
+    <Compile Include="Assets\AtmosphericHouse\Scripts\PrefabSwapper\SwapPrefabList.cs" />
+    <Compile Include="Assets\AtmosphericHouse\Scripts\SimplePlayerUse.cs" />
     <Compile Include="Assets\Scripts\Trash.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureWeatherProfile.cs" />
@@ -79,6 +84,8 @@
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureWeatherController.cs" />
     <Compile Include="Assets\Scripts\CameraBehaviour.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scenes\_Utilities\AzureCameraOrbit.cs" />
+    <Compile Include="Assets\AtmosphericHouse\Scripts\DisableAtStart.cs" />
+    <Compile Include="Assets\AtmosphericHouse\Scripts\SimpleOpenClose.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureOverrideObject.cs" />
     <Compile Include="Assets\Scripts\InputManager.cs" />
     <Compile Include="Assets\Scripts\Rules\Addons\RulesAddonTemplate.cs" />
@@ -89,6 +96,7 @@
     <Compile Include="Assets\Scripts\Rules\Rule.cs" />
     <Compile Include="Assets\Scripts\RulesManager.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scenes\_Utilities\AzureSliderToTime.cs" />
+    <Compile Include="Assets\AtmosphericHouse\Scripts\PrefabSwapper\SwapPrefabListVisualizer.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureOverridePropertiesManually.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureEffectsController.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureThunderEffect.cs" />
@@ -116,11 +124,13 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\DynamicClouds.shader" />
+    <None Include="Assets\AtmosphericHouse\URP\URP_Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\Transparent\UnlitAlpha.shader" />
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\Transparent\ParticleAlphaBlend.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\AtmosphericHouse\BuiltIn_RP\BuiltIn_Shaders\Standard_doublesided_cutout.shader" />
+    <None Include="Assets\AtmosphericHouse\Readme\Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\Transparent\AzureFogCore.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
