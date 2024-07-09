@@ -342,7 +342,7 @@ Material:
     - _UnlitColor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
     - _UnlitColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &4901947270523417556
+--- !u!114 &2420563208195849788
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
