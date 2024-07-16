@@ -10,6 +10,7 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] private float m_RayLenght = 1.5f;
     [SerializeField] private Transform m_Head;
     [SerializeField] private HUD m_HUD;
+    [SerializeField] LayerMask PlayerLayer;
 
 
     private Interactable m_UsableObject;
@@ -68,15 +69,15 @@ public class PlayerControl : MonoBehaviour
 
     }
 
+    
+
     private void UseObjects()
     {
-        Debug.DrawRay(m_Head.position, Camera.main.transform.forward * m_RayLenght, Color.red);
-
         if (m_UsableObject != null)
         {
             m_UsableObject.InRange(false);
         }
-        if (Physics.Raycast(m_Head.position, Camera.main.transform.forward, out RaycastHit info, m_RayLenght))
+        if (Physics.Raycast(m_Head.position, Camera.main.transform.forward, out RaycastHit info, m_RayLenght, ~PlayerLayer))
         {
             Interactable interactableHit = info.collider.GetComponent<Interactable>();
 

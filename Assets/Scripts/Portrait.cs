@@ -35,9 +35,10 @@ public class Portrait : MonoBehaviour
     {
         while (true)
         {
-            Debug.DrawRay(m_Eyes.position, m_Eyes.forward, Color.red);
+            Debug.DrawRay(m_Eyes.position, m_Eyes.forward*2, Color.red);
             if (Physics.Raycast(m_Eyes.position, m_Eyes.forward, out RaycastHit hitInfo, 2.0f))
             {
+                Debug.Log(hitInfo.collider.name);
                 PlayerControl player = hitInfo.collider.GetComponent<PlayerControl>();
 
                 if (player != null)
