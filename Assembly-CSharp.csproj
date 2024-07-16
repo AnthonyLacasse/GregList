@@ -67,6 +67,7 @@
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureWeatherZone.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureTimeController.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scenes\_Utilities\AzureFlyCamera.cs" />
+    <Compile Include="Assets\Scripts\Audio\AudioPool.cs" />
     <Compile Include="Assets\AtmosphericHouse\Scripts\SimplePlayerController.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureShaderUniforms.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\AtmosphericHouse\Scripts\PrefabSwapper\SwapPrefab.cs" />
     <Compile Include="Assets\AtmosphericHouse\Scripts\PrefabSwapper\SwapPrefabList.cs" />
+    <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
     <Compile Include="Assets\AtmosphericHouse\Scripts\SimplePlayerUse.cs" />
     <Compile Include="Assets\Scripts\Trash.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
