@@ -10,6 +10,7 @@ public class RulesManager : MonoBehaviour
     [SerializeField] private AzureTimeController m_Sky;
     [SerializeField] private List<Rule> m_Rules;
     
+    private bool PortraitsActive = false;
 
     private int m_CurrentRule = 0;
 
@@ -63,6 +64,15 @@ public class RulesManager : MonoBehaviour
         //Je sais que je peux forcer la skybox à afficher une heure entière, je vais continuer de consulter la documentation 
     }
 
+    public bool GetPortraitMode()
+    {
+        return PortraitsActive;
+    }
+
+    public void SetPortaitMode(bool portraitBehaviour)
+    {
+        PortraitsActive = portraitBehaviour;
+    }
     
 
 }

@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "G:\\College Bart\\ProjetPratique\\GregList\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|g:\\college bart\\projetpratique\\greglist\\assets\\scripts\\rules\\mainrules\\ruletemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rules\\mainrules\\ruletemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|g:\\college bart\\projetpratique\\greglist\\assets\\scripts\\observer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\observer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|G:\\College Bart\\ProjetPratique\\GregList\\assets\\scripts\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|g:\\college bart\\projetpratique\\greglist\\assets\\scripts\\portrait.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\portrait.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|G:\\College Bart\\ProjetPratique\\GregList\\assets\\scripts\\rulesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rulesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|G:\\College Bart\\ProjetPratique\\GregList\\assets\\scripts\\exercices\\portraitbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\exercices\\portraitbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|G:\\College Bart\\ProjetPratique\\GregList\\assets\\scenes\\gyms\\time\u0026sky\\button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\gyms\\time\u0026sky\\button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|G:\\College Bart\\ProjetPratique\\GregList\\assets\\scripts\\plants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\plants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|G:\\College Bart\\ProjetPratique\\GregList\\assets\\scripts\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,24 +35,20 @@
       "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|G:\\College Bart\\ProjetPratique\\GregList\\assets\\scripts\\rules\\mainrules\\ruletemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rules\\mainrules\\ruletemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|G:\\College Bart\\ProjetPratique\\GregList\\assets\\scripts\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|G:\\College Bart\\ProjetPratique\\GregList\\assets\\scripts\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|G:\\College Bart\\ProjetPratique\\GregList\\assets\\scripts\\rulesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rulesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|G:\\College Bart\\ProjetPratique\\GregList\\assets\\scripts\\plants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\plants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|G:\\College Bart\\ProjetPratique\\GregList\\assets\\scripts\\disposableobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\disposableobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|G:\\College Bart\\ProjetPratique\\GregList\\assets\\scenes\\gyms\\time\u0026sky\\button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\gyms\\time\u0026sky\\button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\College Bart\\ProjetPratique\\GregList\\Assets\\Scripts\\Rules\\IntroductoryRulesTemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,6 +67,44 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Observer.cs",
+              "DocumentMoniker": "G:\\College Bart\\ProjetPratique\\GregList\\Assets\\Scripts\\Observer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Observer.cs",
+              "ToolTip": "G:\\College Bart\\ProjetPratique\\GregList\\Assets\\Scripts\\Observer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Observer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T01:30:58.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PortraitButton.cs",
+              "DocumentMoniker": "G:\\College Bart\\ProjetPratique\\GregList\\Assets\\Scripts\\Exercices\\PortraitButton.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Exercices\\PortraitButton.cs",
+              "ToolTip": "G:\\College Bart\\ProjetPratique\\GregList\\Assets\\Scripts\\Exercices\\PortraitButton.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Exercices\\PortraitButton.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T15:25:06.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Portrait.cs",
+              "DocumentMoniker": "G:\\College Bart\\ProjetPratique\\GregList\\Assets\\Scripts\\Portrait.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Portrait.cs",
+              "ToolTip": "G:\\College Bart\\ProjetPratique\\GregList\\Assets\\Scripts\\Portrait.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Portrait.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T13:30:50.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "RuleTemplate.cs",
               "DocumentMoniker": "G:\\College Bart\\ProjetPratique\\GregList\\Assets\\Scripts\\Rules\\MainRules\\RuleTemplate.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Rules\\MainRules\\RuleTemplate.cs",
@@ -62,12 +112,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Rules\\MainRules\\RuleTemplate.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T16:01:57.363Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-09T16:01:57.363Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "IntroductoryRulesTemplate.cs",
               "DocumentMoniker": "G:\\College Bart\\ProjetPratique\\GregList\\Assets\\Scripts\\Rules\\IntroductoryRulesTemplate.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Rules\\IntroductoryRulesTemplate.cs",
@@ -79,19 +128,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "Button.cs",
               "DocumentMoniker": "G:\\College Bart\\ProjetPratique\\GregList\\Assets\\Scenes\\Gyms\\TIme\u0026Sky\\Button.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\Gyms\\TIme\u0026Sky\\Button.cs",
               "ToolTip": "G:\\College Bart\\ProjetPratique\\GregList\\Assets\\Scenes\\Gyms\\TIme\u0026Sky\\Button.cs",
               "RelativeToolTip": "Assets\\Scenes\\Gyms\\TIme\u0026Sky\\Button.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-21T01:53:19.526Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "DisposableObject.cs",
               "DocumentMoniker": "G:\\College Bart\\ProjetPratique\\GregList\\Assets\\Scripts\\DisposableObject.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DisposableObject.cs",
@@ -103,31 +152,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Plants.cs",
               "DocumentMoniker": "G:\\College Bart\\ProjetPratique\\GregList\\Assets\\Scripts\\Plants.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Plants.cs",
               "ToolTip": "G:\\College Bart\\ProjetPratique\\GregList\\Assets\\Scripts\\Plants.cs",
               "RelativeToolTip": "Assets\\Scripts\\Plants.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-21T00:49:47.09Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "RulesManager.cs",
               "DocumentMoniker": "G:\\College Bart\\ProjetPratique\\GregList\\Assets\\Scripts\\RulesManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\RulesManager.cs",
               "ToolTip": "G:\\College Bart\\ProjetPratique\\GregList\\Assets\\Scripts\\RulesManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\RulesManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-21T00:30:46.515Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "InputManager.cs",
               "DocumentMoniker": "G:\\College Bart\\ProjetPratique\\GregList\\Assets\\Scripts\\InputManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InputManager.cs",
@@ -139,31 +188,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "PlayerControl.cs",
               "DocumentMoniker": "G:\\College Bart\\ProjetPratique\\GregList\\Assets\\Scripts\\PlayerControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerControl.cs",
               "ToolTip": "G:\\College Bart\\ProjetPratique\\GregList\\Assets\\Scripts\\PlayerControl.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerControl.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-17T14:36:14.907Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Interactable.cs",
               "DocumentMoniker": "G:\\College Bart\\ProjetPratique\\GregList\\Assets\\Scripts\\Interactable.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Interactable.cs",
               "ToolTip": "G:\\College Bart\\ProjetPratique\\GregList\\Assets\\Scripts\\Interactable.cs",
               "RelativeToolTip": "Assets\\Scripts\\Interactable.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-17T14:35:23.236Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "HUD.cs",
               "DocumentMoniker": "G:\\College Bart\\ProjetPratique\\GregList\\Assets\\Scripts\\HUD.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HUD.cs",

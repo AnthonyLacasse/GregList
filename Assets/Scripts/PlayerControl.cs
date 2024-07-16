@@ -30,6 +30,8 @@ public class PlayerControl : MonoBehaviour
         m_InputManager = InputManager.Instance;
         m_PlayerView = Camera.main.transform;
         m_InitialSize = transform.localScale;
+
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
