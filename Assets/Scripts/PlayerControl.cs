@@ -21,6 +21,7 @@ public class PlayerControl : MonoBehaviour
     private InputManager m_InputManager;
     private Transform m_PlayerView;
     private Vector3 m_InitialSize;
+    private bool m_SeeNote = true;
 
     public Action<GameObject> m_VisitingRoom;
 
@@ -39,6 +40,7 @@ public class PlayerControl : MonoBehaviour
     {
         Move();
         UseObjects();
+        ConsultNote();
     }
 
     private void Move()
@@ -69,7 +71,7 @@ public class PlayerControl : MonoBehaviour
 
     }
 
-    
+
 
     private void UseObjects()
     {
@@ -102,6 +104,25 @@ public class PlayerControl : MonoBehaviour
             m_UsableObject = null;
             m_HUD.HidePrompt();
         }
+    }
+
+    private void ConsultNote()
+    {
+        if (RulesManager.Instance.GetListCollected() && Input.GetKeyDown(KeyCode.Tab))
+        {
+            if (m_SeeNote)
+            {
+                m_SeeNote = false;
+                m_HUD.HideNote();
+            }
+            else
+            {
+                m_SeeNote = true;
+                m_HUD.DisplayNote();
+            }
+
+        }
+
     }
 
     private void OnTriggerExit(Collider other)

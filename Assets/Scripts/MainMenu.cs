@@ -43,7 +43,7 @@ public class MainMenu : MonoBehaviour
             yield return null;
         }
 
-        StopCoroutine(RaisePhoneRoutine());
+        StopCoroutine(m_HandRoutine);
     }
 
 

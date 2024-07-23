@@ -1058,7 +1058,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1413737854}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: UnityEngine.AzureSky.AzureSliderToTime, Assembly-CSharp
         m_MethodName: SetAzureTimeline
         m_Mode: 2
         m_Arguments:

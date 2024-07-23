@@ -9,7 +9,8 @@ public class RulesManager : MonoBehaviour
 
     [SerializeField] private AzureTimeController m_Sky;
     [SerializeField] private List<Rule> m_Rules;
-    
+
+    private bool ListCollected = false;
     private bool PortraitsActive = false;
 
     private int m_CurrentRule = 0;
@@ -68,6 +69,14 @@ public class RulesManager : MonoBehaviour
     {
         return PortraitsActive;
     }
+
+    public bool GetListCollected()
+    {
+        return ListCollected;
+    }
+
+    public void SetListCollected() { ListCollected = true; }
+
 
     public void SetPortaitMode(bool portraitBehaviour)
     {

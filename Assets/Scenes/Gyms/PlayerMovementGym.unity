@@ -411,6 +411,9 @@ MonoBehaviour:
   m_RayLenght: 1.5
   m_Head: {fileID: 0}
   m_HUD: {fileID: 0}
+  PlayerLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!4 &162933846
 Transform:
   m_ObjectHideFlags: 0
