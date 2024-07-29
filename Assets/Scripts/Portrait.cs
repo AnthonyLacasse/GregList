@@ -28,14 +28,14 @@ public class Portrait : MonoBehaviour
 
         m_Renderer.material = m_Textures[(int)EPortrait.FRIENDLY];  // Material pour le Gym, code final doit être mainTexture
 
-        
+
     }
 
     public IEnumerator PortraitGazeRoutine()
     {
         while (true)
         {
-            Debug.DrawRay(m_Eyes.position, m_Eyes.forward*2, Color.red);
+            Debug.DrawRay(m_Eyes.position, m_Eyes.forward * 2, Color.red);
             if (Physics.Raycast(m_Eyes.position, m_Eyes.forward, out RaycastHit hitInfo, 2.0f))
             {
                 Debug.Log(hitInfo.collider.name);
@@ -61,7 +61,10 @@ public class Portrait : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        StopCoroutine(m_PortraitRoutine);
+        if (m_PortraitRoutine != null)
+        {
+            StopCoroutine(m_PortraitRoutine);
+        }
     }
 
 

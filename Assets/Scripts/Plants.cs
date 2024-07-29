@@ -28,7 +28,7 @@ public class Plant : MonoBehaviour, Interactable
     {
         if (m_CanInteract)
         {
-            //Implement watering plant counter
+            
             m_CanInteract = false;
         }
     }

@@ -7,13 +7,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9879b6d36b335bb4e98496f6ec14930c, type: 3}
+  m_Script: {fileID: 11500000, guid: 13e2416ea4d96fa4ebc9086dfc01b77b, type: 3}
   m_Name: AfternoonRule
   m_EditorClassIdentifier: 
-  RuleDescription: []
-  MinorModifiers: []
-  TimeValue: 0
-  RoomsToVisit: 0
+  RuleDescription:
+  - Once all pants have been taken care of, clean the trash. Make sure you don't
+    disturb the portraits... when the plants are not thirsty, they tend to wake the
+    portrait up, and we don't want them to think you're the reason they're awake,
+    don't you?
+  TimeValue: 30
+  RoomsToVisit: 6
+  PortraitsActive: 1
   VisitedRooms: []
+  Prefabs:
+  - {fileID: 3445358861301749599, guid: c66ac363fae5a134db0f5051418f5e13, type: 3}
+  FailureAvatar: {fileID: 7861930870128412657, guid: 67c7c2dbc560c0c4790bf4f537e3b331, type: 3}
+  RuleFollowed: 1

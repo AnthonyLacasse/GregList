@@ -7,17 +7,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9879b6d36b335bb4e98496f6ec14930c, type: 3}
+  m_Script: {fileID: 11500000, guid: 13e2416ea4d96fa4ebc9086dfc01b77b, type: 3}
   m_Name: MorningRule
   m_EditorClassIdentifier: 
   RuleDescription:
-  - 
-  MinorModifiers:
-  - {fileID: 0}
-  TimeValue: 15
-  RoomsToVisit: 4
+  - 'Please, tend to the flowers in the house. Make sure all but the ferns are watered.
+    The ferns don''t like when their soil is too wet. '
+  TimeValue: 20
+  RoomsToVisit: 11
+  PortraitsActive: 0
   VisitedRooms: []
-  Player: {fileID: 0}
-  m_RuleTool: {fileID: 0}
+  Prefabs:
+  - {fileID: 7618920111815874562, guid: 8cddf00a6e8c9cd46ad0f301b8eb7aab, type: 3}
+  - {fileID: 5869174410389466359, guid: f4007abfecca681449208ae7342f8b46, type: 3}
+  - {fileID: 3887203265843613310, guid: 7980abe9ce32cfe439706bd5955b38e9, type: 3}
+  FailureAvatar: {fileID: 7618920111815874562, guid: 8cddf00a6e8c9cd46ad0f301b8eb7aab, type: 3}
+  RuleFollowed: 1
