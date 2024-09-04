@@ -40,6 +40,7 @@ public class MainMenu : MonoBehaviour
         {
             m_Elapsed += Time.deltaTime;
             m_Hand.transform.localPosition = Vector3.Lerp(m_StartingHandPosition, m_FinalHandPosition, m_Elapsed/2);
+            Debug.Log(m_Hand.transform.localPosition);
             yield return null;
         }
 

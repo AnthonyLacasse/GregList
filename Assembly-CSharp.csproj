@@ -98,7 +98,6 @@
     <Compile Include="Assets\Scripts\InputManager.cs" />
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
     <Compile Include="Assets\Scenes\Gyms\TIme&amp;Sky\Button.cs" />
-    <Compile Include="Assets\Scripts\Rule.cs" />
     <Compile Include="Assets\Scripts\Exercices\CinemachineScript.cs" />
     <Compile Include="Assets\Scripts\RulesManager.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scenes\_Utilities\AzureSliderToTime.cs" />

@@ -12,9 +12,6 @@ public enum EEventType
 }
 
 
-
-
-
 public class Observer
 {
     #region Singleton

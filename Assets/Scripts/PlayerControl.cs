@@ -12,7 +12,6 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] private HUD m_HUD;
     [SerializeField] LayerMask PlayerLayer;
 
-
     private Interactable m_UsableObject;
 
     //private Vector3 m_MoveDirection = Vector3.zero;
@@ -63,12 +62,10 @@ public class PlayerControl : MonoBehaviour
             speed = m_JogSpeed;
         }
 
-
         Vector2 movement = m_InputManager.GetPlayerMovement();
         Vector3 move = new Vector3(movement.x, 0, movement.y);
         move = m_PlayerView.forward * move.z + m_PlayerView.right * move.x;
         m_Controller.SimpleMove(move * speed);
-
     }
 
 
@@ -120,9 +117,7 @@ public class PlayerControl : MonoBehaviour
                 m_SeeNote = true;
                 m_HUD.DisplayNote();
             }
-
         }
-
     }
 
     private void OnTriggerExit(Collider other)

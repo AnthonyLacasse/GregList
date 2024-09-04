@@ -23,6 +23,8 @@ public class LightSwitch : MonoBehaviour, Interactable
         {
             GetComponent<Renderer>().material.color = initialColor;
         }
+
+        AudioManager.GetInstance().PlaySound(EClipType.LIGHTSWITCH);
     }
 
     public void Use()

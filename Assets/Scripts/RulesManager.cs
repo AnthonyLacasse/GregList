@@ -8,7 +8,7 @@ public class RulesManager : MonoBehaviour
     private static RulesManager m_Instance;
 
     [SerializeField] private AzureTimeController m_Sky;
-    [SerializeField] private List<Rule> m_Rules;
+  //  [SerializeField] private List<Rule> m_Rules;
 
     [SerializeField] private GameObject m_Exit;
 
@@ -58,7 +58,7 @@ public class RulesManager : MonoBehaviour
         RulesSpawnPositions.Add(m_Rule2SpawnPoints);
 
         m_CurrentRule = 0;
-        m_Rules[m_CurrentRule].Init();
+        //m_Rules[m_CurrentRule].Init();
 
 
     }
@@ -112,55 +112,55 @@ public class RulesManager : MonoBehaviour
 
 
 
-    public void RuleCompleted(bool ruleSuccess)
-    {
-        m_CurrentRule++;
-        m_RulesSuccess.Add(ruleSuccess);
+    //public void RuleCompleted(bool ruleSuccess)
+    //{
+    //    m_CurrentRule++;
+    //    m_RulesSuccess.Add(ruleSuccess);
 
 
-        if (m_CurrentRule == m_Rules.Count)
-        {
-            for (int i = 0; i < m_Rules.Count; i++)
-            {
-                if (m_RulesSuccess[i] == false)
-                {
-                    foreach (Transform spawnPoint in FailureSpots)
-                    {
-                        Instantiate(m_Rules[i].FailureAvatar, spawnPoint.transform);
-                    }
+    //    if (m_CurrentRule == m_Rules.Count)
+    //    {
+    //        for (int i = 0; i < m_Rules.Count; i++)
+    //        {
+    //            if (m_RulesSuccess[i] == false)
+    //            {
+    //                foreach (Transform spawnPoint in FailureSpots)
+    //                {
+    //                    Instantiate(m_Rules[i].FailureAvatar, spawnPoint.transform);
+    //                }
                     
-                    Escape = false;
-                    return;
-                }
+    //                Escape = false;
+    //                return;
+    //            }
 
 
-            }
+    //        }
 
-            m_Exit.SetActive(false);
-        }
-    }
+    //        m_Exit.SetActive(false);
+    //    }
+    //}
 
-    public string GetRulesDescriptions()
-    {
-        string descriptionList = "";
+    //public string GetRulesDescriptions()
+    //{
+    //    string descriptionList = "";
 
-        foreach (Rule rule in m_Rules)
-        {
-            for (int i = 0; i < m_Rules.Count; i++)
-            {
-                for (int j = 0; j < m_Rules[i].RuleDescription.Count; j++)
-                {
-                    descriptionList += m_Rules[i].RuleDescription[j];
-                }
-            }
-        }
+    //    foreach (Rule rule in m_Rules)
+    //    {
+    //        for (int i = 0; i < m_Rules.Count; i++)
+    //        {
+    //            for (int j = 0; j < m_Rules[i].RuleDescription.Count; j++)
+    //            {
+    //                descriptionList += m_Rules[i].RuleDescription[j];
+    //            }
+    //        }
+    //    }
 
-        return descriptionList;
-    }
+    //    return descriptionList;
+    //}
 
-    public Rule GetActiveRule()
-    {
-        return m_Rules[m_CurrentRule];
-    }
+    //public Rule GetActiveRule()
+    //{
+    //    return m_Rules[m_CurrentRule];
+    //}
 
 }

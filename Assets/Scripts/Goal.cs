@@ -12,6 +12,5 @@ public class Goal : MonoBehaviour
         {
             m_HUD.WinGame();
         }
-
     }
 }

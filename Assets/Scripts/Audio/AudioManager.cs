@@ -73,7 +73,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    private void PlaySound(EClipType type)
+    public void PlaySound(EClipType type)
     {
         AudioSource availableSource = m_AudioPool.GetAvailableAudioSource();
         if (availableSource == null)  { return; }
