@@ -79,6 +79,7 @@
     <Compile Include="Assets\AtmosphericHouse\Scripts\PrefabSwapper\SwapPrefab.cs" />
     <Compile Include="Assets\AtmosphericHouse\Scripts\PrefabSwapper\SwapPrefabList.cs" />
     <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\Rules\MorningRule.cs" />
     <Compile Include="Assets\AtmosphericHouse\Scripts\SimplePlayerUse.cs" />
     <Compile Include="Assets\Scripts\Trash.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
@@ -89,6 +90,7 @@
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureFogScattering.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureWeatherController.cs" />
     <Compile Include="Assets\Scripts\CameraBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Rules\RulesManager.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scenes\_Utilities\AzureCameraOrbit.cs" />
     <Compile Include="Assets\AtmosphericHouse\Scripts\DisableAtStart.cs" />
     <Compile Include="Assets\Scripts\Exercices\PortraitButton.cs" />
@@ -99,7 +101,7 @@
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
     <Compile Include="Assets\Scenes\Gyms\TIme&amp;Sky\Button.cs" />
     <Compile Include="Assets\Scripts\Exercices\CinemachineScript.cs" />
-    <Compile Include="Assets\Scripts\RulesManager.cs" />
+    <Compile Include="Assets\Scripts\Rules\Rule.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scenes\_Utilities\AzureSliderToTime.cs" />
     <Compile Include="Assets\Scripts\Observer.cs" />
     <Compile Include="Assets\Scripts\LightSwitch.cs" />

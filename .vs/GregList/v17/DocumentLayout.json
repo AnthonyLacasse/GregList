@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|D:\\Anthony_Lacasse\\TravailPratique\\GregList\\assets\\scripts\\rulesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rulesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|d:\\anthony_lacasse\\travailpratique\\greglist\\assets\\scripts\\rules\\morningrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rules\\morningrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|d:\\anthony_lacasse\\travailpratique\\greglist\\assets\\scripts\\rules\\rule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rules\\rule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\RulesManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\RulesManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|D:\\Anthony_Lacasse\\TravailPratique\\GregList\\assets\\scripts\\observer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,7 +31,7 @@
       "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|d:\\anthony_lacasse\\travailpratique\\greglist\\assets\\scripts\\audio\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|D:\\Anthony_Lacasse\\TravailPratique\\GregList\\assets\\scripts\\audio\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audio\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -86,11 +94,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "MorningRule.cs",
+              "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Rules\\MorningRule.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Rules\\MorningRule.cs",
+              "ToolTip": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Rules\\MorningRule.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Rules\\MorningRule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T16:35:05.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Rule.cs",
+              "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Rules\\Rule.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Rules\\Rule.cs",
+              "ToolTip": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Rules\\Rule.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Rules\\Rule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T16:22:21.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "AudioManager.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Audio\\AudioManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Audio\\AudioManager.cs",
@@ -98,12 +132,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Audio\\AudioManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T19:26:38.456Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-04T19:26:38.456Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Goal.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Goal.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Goal.cs",
@@ -111,12 +144,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Goal.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T01:13:29.381Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-29T01:13:29.381Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "LightSwitch.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\LightSwitch.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\LightSwitch.cs",
@@ -124,12 +156,11 @@
               "RelativeToolTip": "Assets\\Scripts\\LightSwitch.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T23:59:18.915Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-18T23:59:18.915Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Observer.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Observer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Observer.cs",
@@ -137,12 +168,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Observer.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T01:30:58.287Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-16T01:30:58.287Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "PortraitButton.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Exercices\\PortraitButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Exercices\\PortraitButton.cs",
@@ -154,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Portrait.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Portrait.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Portrait.cs",
@@ -166,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Plants.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Plants.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Plants.cs",
@@ -178,20 +208,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "RulesManager.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\RulesManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\RulesManager.cs",
               "ToolTip": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\RulesManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\RulesManager.cs",
-              "ViewState": "AgIAAIMAAAAAAAAAAAAnwI0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T00:30:46.515Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-21T00:30:46.515Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Note.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Note.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Note.cs",
@@ -199,12 +227,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Note.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T19:46:31.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-28T19:46:31.787Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "PlayerControl.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\PlayerControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerControl.cs",
@@ -212,12 +239,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerControl.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T14:36:14.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-17T14:36:14.907Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Fern.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Fern.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Fern.cs",
@@ -225,12 +251,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Fern.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T14:02:18.313Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-28T14:02:18.313Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "HUD.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\HUD.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HUD.cs",
@@ -238,12 +263,11 @@
               "RelativeToolTip": "Assets\\Scripts\\HUD.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHIAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T14:35:17.504Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-17T14:35:17.504Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Checkpoint.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Checkpoint.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Checkpoint.cs",
@@ -255,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\MainMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu.cs",
@@ -267,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "URP_Readme.txt",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\AtmosphericHouse\\URP\\URP_Readme.txt",
               "RelativeDocumentMoniker": "Assets\\AtmosphericHouse\\URP\\URP_Readme.txt",
@@ -279,7 +303,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "DisposableObject.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\DisposableObject.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DisposableObject.cs",
@@ -291,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Button.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scenes\\Gyms\\TIme\u0026Sky\\Button.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\Gyms\\TIme\u0026Sky\\Button.cs",
@@ -303,7 +327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "InputManager.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\InputManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InputManager.cs",
@@ -315,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "Interactable.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Interactable.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Interactable.cs",
