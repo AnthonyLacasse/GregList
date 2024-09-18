@@ -103,7 +103,6 @@
     <Compile Include="Assets\Scripts\Exercices\CinemachineScript.cs" />
     <Compile Include="Assets\Scripts\Rules\Rule.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scenes\_Utilities\AzureSliderToTime.cs" />
-    <Compile Include="Assets\Scripts\Observer.cs" />
     <Compile Include="Assets\Scripts\LightSwitch.cs" />
     <Compile Include="Assets\AtmosphericHouse\Scripts\PrefabSwapper\SwapPrefabListVisualizer.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureOverridePropertiesManually.cs" />

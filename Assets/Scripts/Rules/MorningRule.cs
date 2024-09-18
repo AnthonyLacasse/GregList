@@ -1,16 +1,20 @@
 
 using System.Collections.Generic;
+using System.Globalization;
 using UnityEngine;
 
 [CreateAssetMenu]
 public class MorningRule : Rule
 {
     public List<string> ruleDescription;
-    public List<Transform> spawnLocations;
+
+    public List<GameObject> plantsPrefabs;
+
+    public int numberOfPlants;
     
     public override void Init()
     {
-        
+        SpawnPlants();
     }
     public override void CheckCompletion()
     {
@@ -22,18 +26,24 @@ public class MorningRule : Rule
         throw new System.NotImplementedException();
     }
 
-    private List<Transform> GetSpawnPoints()
+    private void SpawnPlants()
     {
-        spawnLocations = new List<Transform>();
+        List<Transform> spawnPoints = RulesManager.Instance.GetSpawnPoints();
+        List<Transform>  spawnLocations = new List<Transform>();
 
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < numberOfPlants; i++)                                                    //Populate transform list with X random spawn points for the global list
         {
-
+            int randomPoint = Random.Range(0, spawnPoints.Count);
+            spawnLocations.Add(spawnPoints[randomPoint]);
+            spawnPoints.Remove(spawnPoints[randomPoint]);
         }
 
-
-        
-        return spawnLocations;
+        foreach (Transform spawn in spawnLocations)                                    //Spawn a different flower on each location
+        {
+            int flower = Random.Range(0, plantsPrefabs.Count);
+            Instantiate(plantsPrefabs[flower], spawn);
+        }      
+       
     }
 
 

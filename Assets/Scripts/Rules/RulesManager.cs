@@ -8,15 +8,13 @@ public class RulesManager : MonoBehaviour
     private static RulesManager m_Instance;
 
     [SerializeField] private AzureTimeController m_Sky;
-  //  [SerializeField] private List<Rule> m_Rules;
+    [SerializeField] private List<Rule> m_Rules;
 
     [SerializeField] private GameObject m_Exit;
 
     [SerializeField] private PlayerControl m_Player;
-    [SerializeField] private List<Transform> m_Rule1SpawnPoints;
-    [SerializeField] private List<Transform> m_Rule2SpawnPoints;
-
-
+    [SerializeField] private List<Transform> m_AllSpawnPoints;
+    [SerializeField] private List<Transform> FailureSpots;   
 
     private bool ListCollected = false;
     private bool PortraitsActive = false;
@@ -25,14 +23,11 @@ public class RulesManager : MonoBehaviour
     private int m_CurrentRule;
 
 
-    private int m_Hours = 8;
-    private int m_Minutes = 0;
+    private int m_Hours;
+    private int m_Minutes;
 
-    private List<bool> m_RulesSuccess = new List<bool>();
+    private bool[] m_RulesSuccess = new bool[] { false, false, false, false, false, false };
     private List<List<Transform>> RulesSpawnPositions = new();
-
-
-    public List<Transform> FailureSpots;
 
 
     public static RulesManager Instance
@@ -54,11 +49,15 @@ public class RulesManager : MonoBehaviour
             m_Instance = this;
         }
 
-        RulesSpawnPositions.Add(m_Rule1SpawnPoints);
-        RulesSpawnPositions.Add(m_Rule2SpawnPoints);
+        m_Hours = 8;
+        m_Minutes = 0;
+        ForwardTime(m_Hours, m_Minutes);
+
+        RulesSpawnPositions.Add(m_AllSpawnPoints);
+        
 
         m_CurrentRule = 0;
-        //m_Rules[m_CurrentRule].Init();
+        m_Rules[m_CurrentRule].Init();
 
 
     }
@@ -81,10 +80,13 @@ public class RulesManager : MonoBehaviour
             m_Hours++;
         }
 
-        float timeLine = m_Hours + m_Minutes / 60;
+        float timeLine = m_Hours + (m_Minutes / 60);
 
         m_Sky.SetTimeline(timeLine);
     }
+
+    public List<Transform> GetSpawnPoints() { return m_AllSpawnPoints; }
+
 
     public bool GetPortraitMode()
     {
@@ -128,7 +130,7 @@ public class RulesManager : MonoBehaviour
     //                {
     //                    Instantiate(m_Rules[i].FailureAvatar, spawnPoint.transform);
     //                }
-                    
+
     //                Escape = false;
     //                return;
     //            }
@@ -140,23 +142,23 @@ public class RulesManager : MonoBehaviour
     //    }
     //}
 
-    //public string GetRulesDescriptions()
-    //{
-    //    string descriptionList = "";
+    public string GetRulesDescriptions()
+    {
+        string descriptionList = "";
 
-    //    foreach (Rule rule in m_Rules)
-    //    {
-    //        for (int i = 0; i < m_Rules.Count; i++)
-    //        {
-    //            for (int j = 0; j < m_Rules[i].RuleDescription.Count; j++)
-    //            {
-    //                descriptionList += m_Rules[i].RuleDescription[j];
-    //            }
-    //        }
-    //    }
+        foreach (Rule rule in m_Rules)
+        {
+            for (int i = 0; i < m_Rules.Count; i++)
+            {
+                for (int j = 0; j < m_Rules[i].RuleDescription.Count; j++)
+                {
+                    descriptionList += m_Rules[i].RuleDescription[j];
+                }
+            }
+        }
 
-    //    return descriptionList;
-    //}
+        return descriptionList;
+    }
 
     //public Rule GetActiveRule()
     //{

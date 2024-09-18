@@ -24,11 +24,11 @@ public class LightSwitch : MonoBehaviour, Interactable
             GetComponent<Renderer>().material.color = initialColor;
         }
 
-        AudioManager.GetInstance().PlaySound(EClipType.LIGHTSWITCH);
     }
 
     public void Use()
     {
+      //  AudioManager.GetInstance().PlaySound(EClipType.LIGHTSWITCH);  Wait for audio clip
         foreach (Light light in m_Lights)
         {
             light.enabled = !light.enabled;

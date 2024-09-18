@@ -30,7 +30,7 @@ public class HUD : MonoBehaviour
     {
         m_RulesHiddenPosition = m_RulePanel.transform.localPosition;
 
-       // m_RulesDescription.text = RulesManager.Instance.GetRulesDescriptions();
+        m_RulesDescription.text = RulesManager.Instance.GetRulesDescriptions();
 
     }
 
