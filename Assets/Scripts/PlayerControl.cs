@@ -13,8 +13,7 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] LayerMask PlayerLayer;
 
     private Interactable m_UsableObject;
-
-    //private Vector3 m_MoveDirection = Vector3.zero;
+      
     private CharacterController m_Controller;
 
     private InputManager m_InputManager;

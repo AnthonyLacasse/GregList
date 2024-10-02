@@ -14,19 +14,21 @@ public class RulesManager : MonoBehaviour
 
     [SerializeField] private PlayerControl m_Player;
     [SerializeField] private List<Transform> m_AllSpawnPoints;
-    [SerializeField] private List<Transform> FailureSpots;   
+    [SerializeField] private List<Transform> FailureSpots;
 
     private bool ListCollected = false;
     private bool PortraitsActive = false;
     private bool Escape = true;
 
     private int m_CurrentRule;
+    private int m_Strike;
+    private int m_Rooms;
+
 
 
     private int m_Hours;
     private int m_Minutes;
 
-    private bool[] m_RulesSuccess = new bool[] { false, false, false, false, false, false };
     private List<List<Transform>> RulesSpawnPositions = new();
 
 
@@ -54,12 +56,10 @@ public class RulesManager : MonoBehaviour
         ForwardTime(m_Hours, m_Minutes);
 
         RulesSpawnPositions.Add(m_AllSpawnPoints);
-        
+
 
         m_CurrentRule = 0;
         m_Rules[m_CurrentRule].Init();
-
-
     }
 
     public void ForwardTime(int hour, int minutes)
@@ -85,8 +85,8 @@ public class RulesManager : MonoBehaviour
         m_Sky.SetTimeline(timeLine);
     }
 
-    public List<Transform> GetSpawnPoints() { return m_AllSpawnPoints; }
 
+    public List<Transform> GetSpawnPoints() { return m_AllSpawnPoints; }
 
     public bool GetPortraitMode()
     {
@@ -107,40 +107,29 @@ public class RulesManager : MonoBehaviour
     }
     public PlayerControl GetPlayer() { return m_Player; }
 
-    public bool PlayerCanEscape() { return Escape;  }
+    public bool PlayerCanEscape() { return Escape; }
 
     public List<Transform> GetRuleSpawnPoints() { return RulesSpawnPositions[m_CurrentRule]; }
 
 
 
 
-    //public void RuleCompleted(bool ruleSuccess)
-    //{
-    //    m_CurrentRule++;
-    //    m_RulesSuccess.Add(ruleSuccess);
+    public void RuleCompleted()
+    {
+        m_CurrentRule++;
 
+        if (m_CurrentRule == m_Rules.Count)
+        {
+            if (m_Strike > 0)
+            {
+                Escape = false;
+                return;
+            }
+        }
 
-    //    if (m_CurrentRule == m_Rules.Count)
-    //    {
-    //        for (int i = 0; i < m_Rules.Count; i++)
-    //        {
-    //            if (m_RulesSuccess[i] == false)
-    //            {
-    //                foreach (Transform spawnPoint in FailureSpots)
-    //                {
-    //                    Instantiate(m_Rules[i].FailureAvatar, spawnPoint.transform);
-    //                }
+        m_Exit.SetActive(false);
+    }
 
-    //                Escape = false;
-    //                return;
-    //            }
-
-
-    //        }
-
-    //        m_Exit.SetActive(false);
-    //    }
-    //}
 
     public string GetRulesDescriptions()
     {
@@ -148,21 +137,19 @@ public class RulesManager : MonoBehaviour
 
         foreach (Rule rule in m_Rules)
         {
-            for (int i = 0; i < m_Rules.Count; i++)
+            for (int i = 0; i < rule.ruleDescription.Count; i++)
             {
-                for (int j = 0; j < m_Rules[i].RuleDescription.Count; j++)
-                {
-                    descriptionList += m_Rules[i].RuleDescription[j];
-                }
+                descriptionList += rule.ruleDescription[i];
             }
+
         }
 
         return descriptionList;
     }
 
-    //public Rule GetActiveRule()
-    //{
-    //    return m_Rules[m_CurrentRule];
-    //}
+    public Rule GetActiveRule()
+    {
+        return m_Rules[m_CurrentRule];
+    }
 
 }

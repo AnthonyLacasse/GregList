@@ -6,32 +6,55 @@ using UnityEngine;
 [CreateAssetMenu]
 public class MorningRule : Rule
 {
-    public List<string> ruleDescription;
+    public PlayerControl m_Player;
 
     public List<GameObject> plantsPrefabs;
 
-    public int numberOfPlants;
-    
+    public int m_NumberOfPlants;
+
+    public int m_RoomsToVisit;
+
+    private int m_WateredPlants;
+
+    private int m_NotAFern;
+
+    private List<GameObject> m_VisitedRooms;
+
     public override void Init()
     {
         SpawnPlants();
+        m_WateredPlants = 0;
+        m_VisitedRooms = new List<GameObject>();
+
+        m_Player.m_VisitingRoom += VisitedRoom;
+
     }
+
     public override void CheckCompletion()
     {
-        throw new System.NotImplementedException();
+        if (m_VisitedRooms.Count == m_RoomsToVisit)
+        {
+            if (m_WateredPlants < m_NotAFern)
+            {
+
+            }
+        }
+
+
     }
 
     public override void End()
     {
-        throw new System.NotImplementedException();
+
     }
 
     private void SpawnPlants()
     {
         List<Transform> spawnPoints = RulesManager.Instance.GetSpawnPoints();
-        List<Transform>  spawnLocations = new List<Transform>();
+        List<Transform> spawnLocations = new List<Transform>();
+        m_NotAFern = 0;
 
-        for (int i = 0; i < numberOfPlants; i++)                                                    //Populate transform list with X random spawn points for the global list
+        for (int i = 0; i < m_NumberOfPlants; i++)                                     //Populate transform list with X random spawn points from the global list
         {
             int randomPoint = Random.Range(0, spawnPoints.Count);
             spawnLocations.Add(spawnPoints[randomPoint]);
@@ -42,10 +65,22 @@ public class MorningRule : Rule
         {
             int flower = Random.Range(0, plantsPrefabs.Count);
             Instantiate(plantsPrefabs[flower], spawn);
-        }      
-       
+            if (flower != (plantsPrefabs.Count - 1))
+            {
+                m_NotAFern++;
+            }
+        }
+
     }
 
+    private void VisitedRoom(GameObject room)
+    {
+        if (!m_VisitedRooms.Contains(room))
+        {
+            m_VisitedRooms.Add(room);
+        }
+        CheckCompletion();
+    }
 
 
 

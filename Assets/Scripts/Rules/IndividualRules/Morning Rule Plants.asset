@@ -13,9 +13,13 @@ MonoBehaviour:
   m_Name: Morning Rule Plants
   m_EditorClassIdentifier: 
   ruleDescription:
-  - 
+  - 'Start your day by watering the plants around the house. '
+  - 'Make sure no fern are watered however as they tend to dislike being watered
+    too often. '
+  - 'Visit all rooms, and forget no plants. '
   plantsPrefabs:
   - {fileID: 5869174410389466359, guid: f4007abfecca681449208ae7342f8b46, type: 3}
   - {fileID: 3887203265843613310, guid: 7980abe9ce32cfe439706bd5955b38e9, type: 3}
   - {fileID: 7618920111815874562, guid: 8cddf00a6e8c9cd46ad0f301b8eb7aab, type: 3}
-  numberOfPlants: 10
+  m_NumberOfPlants: 10
+  m_RoomsToVisit: 0
