@@ -38,4 +38,9 @@ public class Fern : MonoBehaviour, Interactable
     {
         return InteractibleType.PLANT;
     }
+
+    public bool CanInteract()
+    {
+        return m_CanInteract;
+    }
 }

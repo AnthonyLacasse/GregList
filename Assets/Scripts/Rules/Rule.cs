@@ -10,6 +10,5 @@ public abstract class Rule : ScriptableObject
     public abstract void CheckCompletion();
     public abstract void End();
     public virtual void Update() { }
-
-
+    public virtual void UseRuleObject() { }
 }

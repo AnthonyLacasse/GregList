@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AzureSky;
+using UnityEngine.SceneManagement;
 
 
 public class RulesManager : MonoBehaviour
@@ -15,6 +16,7 @@ public class RulesManager : MonoBehaviour
     [SerializeField] private PlayerControl m_Player;
     [SerializeField] private List<Transform> m_AllSpawnPoints;
     [SerializeField] private List<Transform> FailureSpots;
+    [SerializeField] private int m_MaxStrikes;
 
     private bool ListCollected = false;
     private bool PortraitsActive = false;
@@ -53,14 +55,16 @@ public class RulesManager : MonoBehaviour
 
         m_Hours = 8;
         m_Minutes = 0;
-        ForwardTime(m_Hours, m_Minutes);
+        float timeLine = m_Hours + (m_Minutes / 60);
+
+        m_Sky.SetTimeline(timeLine);
 
         RulesSpawnPositions.Add(m_AllSpawnPoints);
 
 
         m_CurrentRule = 0;
-        m_Rules[m_CurrentRule].Init();
     }
+    
 
     public void ForwardTime(int hour, int minutes)
     {
@@ -81,8 +85,9 @@ public class RulesManager : MonoBehaviour
         }
 
         float timeLine = m_Hours + (m_Minutes / 60);
-
+        Debug.Log(timeLine);
         m_Sky.SetTimeline(timeLine);
+        
     }
 
 
@@ -114,6 +119,7 @@ public class RulesManager : MonoBehaviour
     public void Striked()
     {
         m_Strike++;
+        Debug.Log("Strike");
         if(m_Strike > 5) 
         {
             LoseGame();
@@ -124,17 +130,18 @@ public class RulesManager : MonoBehaviour
     public void RuleCompleted()
     {
         m_CurrentRule++;
-
+        Debug.Log("RuleCompleted");
         if (m_CurrentRule == m_Rules.Count)
         {
-            if (m_Strike > 0)
+            if (m_Strike > 4)
             {
-                Escape = false;
+                LoseGame();
                 return;
             }
-        }
-
         m_Exit.SetActive(false);
+            return;
+        }
+        m_Rules[m_CurrentRule].Init();
     }
 
 
@@ -161,7 +168,7 @@ public class RulesManager : MonoBehaviour
 
     public void LoseGame()
     {
-        //Fonction générique pur finir la partie
+        m_Player.LoseGame();
     }
 
 

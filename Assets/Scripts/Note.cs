@@ -27,6 +27,7 @@ public class Note : MonoBehaviour, Interactable
     public void Use()
     {
         RulesManager.Instance.SetListCollected();
+        RulesManager.Instance.GetActiveRule().Init();
         m_HUD.DisplayNote();
         Destroy(gameObject);
     }
@@ -34,5 +35,10 @@ public class Note : MonoBehaviour, Interactable
     InteractibleType Interactable.GetType()
     {
         return InteractibleType.DISPOSABLE;
+    }
+
+    public bool CanInteract()
+    {
+        return true;
     }
 }

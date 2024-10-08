@@ -16,6 +16,8 @@ public interface Interactable
 
     public void InRange(bool inRange);
 
+    public bool CanInteract();
+
     public void Use();
 
     public InteractibleType GetType();

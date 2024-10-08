@@ -5,14 +5,14 @@ using UnityEngine;
 
 [CreateAssetMenu]
 public class MorningRule : Rule
-{
-    public PlayerControl m_Player;
-
+{    
     public List<GameObject> plantsPrefabs;
 
     public int m_NumberOfPlants;
 
     public int m_RoomsToVisit;
+
+    public int m_TimeValue;
 
     private int m_WateredPlants;
 
@@ -20,14 +20,17 @@ public class MorningRule : Rule
 
     private List<GameObject> m_VisitedRooms;
 
+    
+
     public override void Init()
     {
-        m_Player.m_VisitingRoom += VisitedRoom;
-
         m_WateredPlants = 0;
+        m_NotAFern = 0;
         m_VisitedRooms = new List<GameObject>();
 
         SpawnPlants();
+
+        RulesManager.Instance.GetPlayer().m_VisitingRoom += VisitedRoom;
 
     }
 
@@ -37,16 +40,16 @@ public class MorningRule : Rule
         {
             if (m_WateredPlants < m_NotAFern)
             {
-
+                RulesManager.Instance.Striked();
             }
+            End();
         }
-
-
     }
 
     public override void End()
     {
-
+        RulesManager.Instance.GetPlayer().m_VisitingRoom -= VisitedRoom;
+        RulesManager.Instance.RuleCompleted();
     }
 
     private void SpawnPlants()
@@ -74,12 +77,20 @@ public class MorningRule : Rule
 
     }
 
+    public override void UseRuleObject() 
+    {
+        m_WateredPlants++;
+    }
+
+
     private void VisitedRoom(GameObject room)
     {
         if (!m_VisitedRooms.Contains(room))
         {
             m_VisitedRooms.Add(room);
+            Debug.Log("New room visited");
         }
+        RulesManager.Instance.ForwardTime(0, m_TimeValue);
         CheckCompletion();
     }
 

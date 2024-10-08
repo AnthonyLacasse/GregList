@@ -31,4 +31,9 @@ public class DisposableObject : MonoBehaviour, Interactable
     {
         return InteractibleType.DISPOSABLE;
     }
+
+    public bool CanInteract()
+    {
+        return true;
+    }
 }

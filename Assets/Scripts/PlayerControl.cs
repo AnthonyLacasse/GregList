@@ -23,6 +23,7 @@ public class PlayerControl : MonoBehaviour
 
     public Action<GameObject> m_VisitingRoom;
 
+
     private void Start()
     {
         m_Controller = GetComponent<CharacterController>();
@@ -86,6 +87,7 @@ public class PlayerControl : MonoBehaviour
             else
             {
                 m_UsableObject = interactableHit;
+                if (interactableHit.CanInteract())
                 m_UsableObject.InRange(true);
                 m_HUD.DisplayPrompt(m_UsableObject.GetType());
             }
@@ -126,4 +128,10 @@ public class PlayerControl : MonoBehaviour
             m_VisitingRoom?.Invoke(other.gameObject);
         }
     }
+
+    public void LoseGame()
+    {
+        m_HUD.LoseGame();
+    }
+
 }

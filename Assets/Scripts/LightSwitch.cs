@@ -40,4 +40,8 @@ public class LightSwitch : MonoBehaviour, Interactable
        return InteractibleType.LIGHT;
     }
 
+    public bool CanInteract()
+    {
+        return true;
+    }
 }

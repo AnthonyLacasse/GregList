@@ -4,7 +4,7 @@ public class Plant : MonoBehaviour, Interactable
 {
     Color initialColor;
 
-    private bool m_CanInteract = true;
+    public bool m_CanInteract = true;
 
     private void Start()
     {
@@ -28,13 +28,17 @@ public class Plant : MonoBehaviour, Interactable
     {
         if (m_CanInteract)
         {
-            
+            RulesManager.Instance.GetActiveRule().UseRuleObject();
+
             m_CanInteract = false;
         }
     }
+     
 
     InteractibleType Interactable.GetType()
     {
         return InteractibleType.PLANT;
     }
+
+    public bool CanInteract() { return m_CanInteract; }
 }

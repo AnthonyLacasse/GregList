@@ -41,4 +41,9 @@ public class Button : MonoBehaviour, Interactable
     {
         return InteractibleType.DISPOSABLE;
     }
+
+    public bool CanInteract()
+    {
+        return true;
+    }
 }
