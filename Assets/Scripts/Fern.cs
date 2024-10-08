@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class Fern : MonoBehaviour, Interactable
@@ -31,7 +30,7 @@ public class Fern : MonoBehaviour, Interactable
         {
             //Implement watering plant counter
             m_CanInteract = false;
-            //RulesManager.Instance.GetActiveRule().RuleFollowed = false;
+            RulesManager.Instance.Striked();
         }
     }
 

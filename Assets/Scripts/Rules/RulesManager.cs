@@ -111,7 +111,14 @@ public class RulesManager : MonoBehaviour
 
     public List<Transform> GetRuleSpawnPoints() { return RulesSpawnPositions[m_CurrentRule]; }
 
-
+    public void Striked()
+    {
+        m_Strike++;
+        if(m_Strike > 5) 
+        {
+            LoseGame();
+        }
+    }
 
 
     public void RuleCompleted()
@@ -151,5 +158,11 @@ public class RulesManager : MonoBehaviour
     {
         return m_Rules[m_CurrentRule];
     }
+
+    public void LoseGame()
+    {
+        //Fonction générique pur finir la partie
+    }
+
 
 }

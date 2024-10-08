@@ -22,11 +22,12 @@ public class MorningRule : Rule
 
     public override void Init()
     {
-        SpawnPlants();
+        m_Player.m_VisitingRoom += VisitedRoom;
+
         m_WateredPlants = 0;
         m_VisitedRooms = new List<GameObject>();
 
-        m_Player.m_VisitingRoom += VisitedRoom;
+        SpawnPlants();
 
     }
 
