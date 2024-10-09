@@ -5,7 +5,7 @@ using UnityEngine;
 
 [CreateAssetMenu]
 public class MorningRule : Rule
-{    
+{
     public List<GameObject> plantsPrefabs;
 
     public int m_NumberOfPlants;
@@ -20,7 +20,7 @@ public class MorningRule : Rule
 
     private List<GameObject> m_VisitedRooms;
 
-    
+
 
     public override void Init()
     {
@@ -54,7 +54,7 @@ public class MorningRule : Rule
 
     private void SpawnPlants()
     {
-        List<Transform> spawnPoints = RulesManager.Instance.GetSpawnPoints();
+        List<Transform> spawnPoints = RulesManager.Instance.GetPlantsSpawnPoints();
         List<Transform> spawnLocations = new List<Transform>();
         m_NotAFern = 0;
 
@@ -77,7 +77,7 @@ public class MorningRule : Rule
 
     }
 
-    public override void UseRuleObject() 
+    public override void OnRuleObjectUsed()
     {
         m_WateredPlants++;
     }
@@ -89,8 +89,8 @@ public class MorningRule : Rule
         {
             m_VisitedRooms.Add(room);
             Debug.Log("New room visited");
+            RulesManager.Instance.ForwardTime(0, m_TimeValue);
         }
-        RulesManager.Instance.ForwardTime(0, m_TimeValue);
         CheckCompletion();
     }
 

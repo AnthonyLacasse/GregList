@@ -12,7 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4105e0cca2a596a4492f17eda9ec4e42, type: 3}
   m_Name: Noon Rule
   m_EditorClassIdentifier: 
-  ruleDescription: []
-  plantsPrefabs: []
-  m_NumberOfPlants: 0
-  m_RoomsToVisit: 0
+  ruleDescription:
+  - One of the tenants would like you to prepare a cold lunch.
+  - I'm sure you will figure out something to their liking.
+  - Prep a plate in the kitchen, and then plate it in the dining room.
+  - Then, go upstairs and wait for them to finish before going down to clean up.
+  foodPrefabs:
+  - {fileID: 6754944931447350016, guid: 29a02781149d2e0428fc23b4890c85d4, type: 3}
+  - {fileID: 7995497868466590050, guid: c5240644e1df8364aa4cea385c7cf092, type: 3}
+  - {fileID: 1626796767978551384, guid: 041a7cb7af0ac6b43b4986cff4df361e, type: 3}
+  - {fileID: 2629127272418962556, guid: 8dc465f46b6c8b242be3b0a23bd18bf1, type: 3}
+  - {fileID: 6491612534258752686, guid: b1a3b57ea32496648b9623a58fa6d8ad, type: 3}
+  - {fileID: 283581748339012267, guid: 3c0685d4d52f57548aa967a3907720f9, type: 3}
+  - {fileID: 3452694226032689571, guid: 7d297ce6a487c0247b5edccce4ece3c6, type: 3}

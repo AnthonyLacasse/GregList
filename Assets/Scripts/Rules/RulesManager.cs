@@ -14,8 +14,9 @@ public class RulesManager : MonoBehaviour
     [SerializeField] private GameObject m_Exit;
 
     [SerializeField] private PlayerControl m_Player;
-    [SerializeField] private List<Transform> m_AllSpawnPoints;
+    [SerializeField] private List<Transform> m_PlantsSpawnPoints;
     [SerializeField] private List<Transform> FailureSpots;
+    [SerializeField] private List<Transform> m_FoodSpawnPoints;
     [SerializeField] private int m_MaxStrikes;
 
     private bool ListCollected = false;
@@ -59,7 +60,7 @@ public class RulesManager : MonoBehaviour
 
         m_Sky.SetTimeline(timeLine);
 
-        RulesSpawnPositions.Add(m_AllSpawnPoints);
+        RulesSpawnPositions.Add(m_PlantsSpawnPoints);
 
 
         m_CurrentRule = 0;
@@ -85,13 +86,15 @@ public class RulesManager : MonoBehaviour
         }
 
         float timeLine = m_Hours + (m_Minutes / 60);
-        Debug.Log(timeLine);
+        Debug.Log($"The time is : {timeLine}");
         m_Sky.SetTimeline(timeLine);
         
     }
 
 
-    public List<Transform> GetSpawnPoints() { return m_AllSpawnPoints; }
+    public List<Transform> GetPlantsSpawnPoints() { return m_PlantsSpawnPoints; }
+
+    public List<Transform> GetFoodSpawnPoints() { return m_FoodSpawnPoints; }
 
     public bool GetPortraitMode()
     {
@@ -155,7 +158,6 @@ public class RulesManager : MonoBehaviour
             {
                 descriptionList += rule.ruleDescription[i];
             }
-
         }
 
         return descriptionList;

@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|D:\\Anthony_Lacasse\\TravailPratique\\GregList\\assets\\scripts\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|D:\\Anthony_Lacasse\\TravailPratique\\GregList\\assets\\scripts\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|D:\\Anthony_Lacasse\\TravailPratique\\GregList\\assets\\scripts\\rules\\morningrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rules\\morningrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,12 +11,28 @@
       "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rules\\rulesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|D:\\Anthony_Lacasse\\TravailPratique\\GregList\\assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|d:\\anthony_lacasse\\travailpratique\\greglist\\assets\\scripts\\rules\\noonrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rules\\noonrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|D:\\Anthony_Lacasse\\TravailPratique\\GregList\\assets\\scripts\\rules\\rule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rules\\rule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|D:\\Anthony_Lacasse\\TravailPratique\\GregList\\assets\\scripts\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|D:\\Anthony_Lacasse\\TravailPratique\\GregList\\assets\\scripts\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|D:\\Anthony_Lacasse\\TravailPratique\\GregList\\assets\\scripts\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|D:\\Anthony_Lacasse\\TravailPratique\\GregList\\assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|D:\\Anthony_Lacasse\\TravailPratique\\GregList\\assets\\scripts\\checkpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,14 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|D:\\Anthony_Lacasse\\TravailPratique\\GregList\\assets\\scripts\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|D:\\Anthony_Lacasse\\TravailPratique\\GregList\\assets\\scripts\\rules\\rule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rules\\rule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|D:\\Anthony_Lacasse\\TravailPratique\\GregList\\assets\\scripts\\rules\\noonrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rules\\noonrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|D:\\Anthony_Lacasse\\TravailPratique\\GregList\\assets\\scripts\\audio\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,63 +62,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "RulesManager.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Rules\\RulesManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Rules\\RulesManager.cs",
               "ToolTip": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Rules\\RulesManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Rules\\RulesManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFcAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAiwFgAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-18T17:21:57.929Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "PlayerControl.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\PlayerControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerControl.cs",
               "ToolTip": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\PlayerControl.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerControl.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAIwIUAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAIwGcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T14:36:14.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-17T14:36:14.907Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MorningRule.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Rules\\MorningRule.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Rules\\MorningRule.cs",
               "ToolTip": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Rules\\MorningRule.cs",
               "RelativeToolTip": "Assets\\Scripts\\Rules\\MorningRule.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAIwGAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAIwFsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-17T16:35:05.472Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainMenu.cs",
-              "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\MainMenu.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu.cs",
-              "ToolTip": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\MainMenu.cs",
-              "RelativeToolTip": "Assets\\Scripts\\MainMenu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T16:32:57.18Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "HUD.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\HUD.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HUD.cs",
@@ -126,12 +112,11 @@
               "RelativeToolTip": "Assets\\Scripts\\HUD.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAQwCAAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T14:35:17.504Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-17T14:35:17.504Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Checkpoint.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Checkpoint.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Checkpoint.cs",
@@ -139,12 +124,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Checkpoint.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T02:05:12.546Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-29T02:05:12.546Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Note.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Note.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Note.cs",
@@ -152,12 +136,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Note.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAgwCUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T19:46:31.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-28T19:46:31.787Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "InputManager.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\InputManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InputManager.cs",
@@ -169,13 +152,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "Rule.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Rules\\Rule.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Rules\\Rule.cs",
               "ToolTip": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Rules\\Rule.cs",
               "RelativeToolTip": "Assets\\Scripts\\Rules\\Rule.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-17T16:22:21.801Z"
             },
@@ -189,7 +172,33 @@
               "RelativeToolTip": "Assets\\Scripts\\Observer.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T01:30:58.287Z"
+              "WhenOpened": "2024-07-16T01:30:58.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NoonRule.cs",
+              "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Rules\\NoonRule.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Rules\\NoonRule.cs",
+              "ToolTip": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Rules\\NoonRule.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Rules\\NoonRule.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T17:28:33.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\MainMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu.cs",
+              "ToolTip": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\MainMenu.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MainMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T16:32:57.18Z"
             },
             {
               "$type": "Document",
@@ -202,18 +211,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-04T19:26:38.456Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "NoonRule.cs",
-              "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Rules\\NoonRule.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Rules\\NoonRule.cs",
-              "ToolTip": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Rules\\NoonRule.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Rules\\NoonRule.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T17:28:33.657Z"
             },
             {
               "$type": "Document",

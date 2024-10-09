@@ -28,7 +28,7 @@ public class Plant : MonoBehaviour, Interactable
     {
         if (m_CanInteract)
         {
-            RulesManager.Instance.GetActiveRule().UseRuleObject();
+            RulesManager.Instance.GetActiveRule().OnRuleObjectUsed();
 
             m_CanInteract = false;
         }

@@ -9,11 +9,12 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] private float m_JogSpeed = 9f;
     [SerializeField] private float m_RayLenght = 1.5f;
     [SerializeField] private Transform m_Head;
+    [SerializeField] private Transform m_Hand;
     [SerializeField] private HUD m_HUD;
     [SerializeField] LayerMask PlayerLayer;
 
     private Interactable m_UsableObject;
-      
+
     private CharacterController m_Controller;
 
     private InputManager m_InputManager;
@@ -88,8 +89,14 @@ public class PlayerControl : MonoBehaviour
             {
                 m_UsableObject = interactableHit;
                 if (interactableHit.CanInteract())
-                m_UsableObject.InRange(true);
-                m_HUD.DisplayPrompt(m_UsableObject.GetType());
+                {
+                    m_UsableObject.InRange(true);
+                    m_HUD.DisplayPrompt(m_UsableObject.GetType());
+                }
+                else
+                {
+                    m_HUD.HidePrompt();
+                }
             }
         }
         if (m_UsableObject == null)

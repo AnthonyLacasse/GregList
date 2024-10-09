@@ -98,6 +98,8 @@
     <Compile Include="Assets\Scripts\Goal.cs" />
     <Compile Include="Assets\Scripts\InputManager.cs" />
     <Compile Include="Assets\Scripts\Rules\NoonRule.cs" />
+    <Compile Include="Assets\Scripts\DebugCommand.cs" />
+    <Compile Include="Assets\Scripts\DebugController.cs" />
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
     <Compile Include="Assets\Scenes\Gyms\TIme&amp;Sky\Button.cs" />
     <Compile Include="Assets\Scripts\Exercices\CinemachineScript.cs" />
