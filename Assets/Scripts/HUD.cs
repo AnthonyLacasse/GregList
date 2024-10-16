@@ -12,11 +12,14 @@ public class HUD : MonoBehaviour
     [SerializeField] private List<Sprite> m_Sprites;
     [SerializeField] private Image m_PromptImage;
     [SerializeField] private Image m_RulePanel;
+    [SerializeField] private CanvasGroup m_Scroll;
     [SerializeField] private Vector3 m_FinalRulePosition;
     [SerializeField] private TextMeshProUGUI m_RulesDescription;
     [SerializeField] private TextMeshProUGUI m_FinalText;
     [SerializeField] private CanvasGroup m_FinalTextGroup;
-    
+    [SerializeField] private TextMeshProUGUI m_RuleTextPrefab;
+
+
 
     private Vector3 m_RulesHiddenPosition;
 
@@ -24,19 +27,31 @@ public class HUD : MonoBehaviour
     private Coroutine m_ShowRulesRoutine;
     private Coroutine m_HideRulesRoutine;
     private Coroutine m_EndGameCoroutine;
-   
+    private Coroutine m_RuleCompletedCoroutine;
+
 
     private void Start()
     {
         m_RulesHiddenPosition = m_RulePanel.transform.localPosition;
 
-        m_RulesDescription.text = RulesManager.Instance.GetRulesDescriptions();
+        List<Rule> rules = RulesManager.Instance.GetRules();
+
+        foreach (Rule rule in rules)
+        {
+            TextMeshProUGUI current = Instantiate(m_RuleTextPrefab, m_RulePanel.transform);
+            
+            foreach (string description in rule.ruleDescription)
+            {
+               current.text += description;
+            }
+            
+        }     
 
     }
 
     public void DisplayPrompt(InteractibleType type)
     {
-        m_PromptImage.sprite = m_Sprites[(int)type]; 
+        m_PromptImage.sprite = m_Sprites[(int)type];
         m_InteractGroup.alpha = 1.0f;
     }
 
@@ -71,6 +86,10 @@ public class HUD : MonoBehaviour
         m_EndGameCoroutine = StartCoroutine(EndGameRoutine());
     }
 
+    public void OnRuleCompleted()
+    {
+        m_RuleCompletedCoroutine = StartCoroutine(RuleCompletedRoutine());
+    }
 
 
     private IEnumerator ShowRulesRoutine()
@@ -99,18 +118,17 @@ public class HUD : MonoBehaviour
 
     }
 
-
     private IEnumerator EndGameRoutine()
     {
         float elapsed = 0;
-        
-        while(true)
+
+        while (true)
         {
             elapsed += Time.deltaTime;
 
             m_FinalTextGroup.alpha = Mathf.Lerp(0, 1, elapsed);
 
-            if (elapsed > 1) 
+            if (elapsed > 1)
             {
                 yield return new WaitForSeconds(5f);
                 SceneManager.LoadScene("TitleScene");
@@ -119,5 +137,22 @@ public class HUD : MonoBehaviour
         }
     }
 
+    private IEnumerator RuleCompletedRoutine()
+    {
+        float elapsed = 0;
+        m_Scroll.alpha = 1f;
+        Debug.Log("Showing");
+
+        while (elapsed < 1.5f)
+        {
+            elapsed += Time.deltaTime;
+            m_Scroll.alpha = Mathf.Lerp(1, 0, elapsed / 1.5f);
+            yield return null;
+
+
+            Debug.Log("ByeBye");
+            StopCoroutine(RuleCompletedRoutine());
+        }
+    }
 
 }

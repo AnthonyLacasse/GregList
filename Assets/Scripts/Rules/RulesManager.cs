@@ -10,6 +10,7 @@ public class RulesManager : MonoBehaviour
 
     [SerializeField] private AzureTimeController m_Sky;
     [SerializeField] private List<Rule> m_Rules;
+    [SerializeField] private HUD m_Hud;
 
     [SerializeField] private GameObject m_Exit;
 
@@ -134,6 +135,8 @@ public class RulesManager : MonoBehaviour
     {
         m_CurrentRule++;
         Debug.Log("RuleCompleted");
+        m_Hud.OnRuleCompleted();
+
         if (m_CurrentRule == m_Rules.Count)
         {
             if (m_Strike > 4)
@@ -147,7 +150,7 @@ public class RulesManager : MonoBehaviour
         m_Rules[m_CurrentRule].Init();
     }
 
-
+    public List<Rule> GetRules() { return m_Rules; }
     public string GetRulesDescriptions()
     {
         string descriptionList = "";
