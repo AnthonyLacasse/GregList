@@ -123,6 +123,7 @@ public class RulesManager : MonoBehaviour
     public void Striked()
     {
         m_Strike++;
+        m_Hud.WriteInRed(m_CurrentRule);
         Debug.Log("Strike");
         if(m_Strike > 5) 
         {
@@ -133,9 +134,11 @@ public class RulesManager : MonoBehaviour
 
     public void RuleCompleted()
     {
+        m_Hud.CheckOff(m_CurrentRule);
+        m_Hud.OnRuleCompleted();
+        AudioManager.GetInstance().PlaySound(EClipType.COMPLETE_TASK);
         m_CurrentRule++;
         Debug.Log("RuleCompleted");
-        m_Hud.OnRuleCompleted();
 
         if (m_CurrentRule == m_Rules.Count)
         {

@@ -28,7 +28,7 @@ public class Fern : MonoBehaviour, Interactable
     {
         if (m_CanInteract)
         {
-            //Implement watering plant counter
+            AudioManager.GetInstance().PlaySound(EClipType.WATER_PLANTS);
             m_CanInteract = false;
             RulesManager.Instance.Striked();
         }

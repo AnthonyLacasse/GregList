@@ -29,7 +29,7 @@ public class Plant : MonoBehaviour, Interactable
         if (m_CanInteract)
         {
             RulesManager.Instance.GetActiveRule().OnRuleObjectUsed();
-
+            AudioManager.GetInstance().PlaySound(EClipType.WATER_PLANTS);
             m_CanInteract = false;
         }
     }

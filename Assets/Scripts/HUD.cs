@@ -12,6 +12,7 @@ public class HUD : MonoBehaviour
     [SerializeField] private List<Sprite> m_Sprites;
     [SerializeField] private Image m_PromptImage;
     [SerializeField] private Image m_RulePanel;
+    [SerializeField] private GameObject m_TextContent;
     [SerializeField] private CanvasGroup m_Scroll;
     [SerializeField] private Vector3 m_FinalRulePosition;
     [SerializeField] private TextMeshProUGUI m_RulesDescription;
@@ -28,25 +29,30 @@ public class HUD : MonoBehaviour
     private Coroutine m_HideRulesRoutine;
     private Coroutine m_EndGameCoroutine;
     private Coroutine m_RuleCompletedCoroutine;
+    private List<TextMeshProUGUI> m_RulesOnNote = new();
 
 
     private void Start()
     {
         m_RulesHiddenPosition = m_RulePanel.transform.localPosition;
+        WriteNote();        
 
+    }
+    private void WriteNote()
+    {
         List<Rule> rules = RulesManager.Instance.GetRules();
 
         foreach (Rule rule in rules)
         {
-            TextMeshProUGUI current = Instantiate(m_RuleTextPrefab, m_RulePanel.transform);
-            
+            TextMeshProUGUI current = Instantiate(m_RuleTextPrefab, m_TextContent.transform);
+
             foreach (string description in rule.ruleDescription)
             {
-               current.text += description;
+                current.text += description;
             }
-            
-        }     
 
+            m_RulesOnNote.Add(current);
+        }
     }
 
     public void DisplayPrompt(InteractibleType type)
@@ -59,6 +65,18 @@ public class HUD : MonoBehaviour
     {
         m_InteractGroup.alpha = 0f;
     }
+
+
+    public void WriteInRed(int rule)
+    {
+        m_RulesOnNote[rule].color = Color.red;
+    }
+
+    public void CheckOff(int rule)
+    {
+        m_RulesOnNote[rule].fontStyle = FontStyles.Strikethrough;
+    }
+
 
     public void DisplayNote()
     {

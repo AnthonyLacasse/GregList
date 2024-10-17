@@ -6,7 +6,7 @@ using UnityEngine;
 public enum EClipType
 {
     SOUNDTRACK,
-    MENU_SFX,
+    COMPLETE_TASK,
     INTERACT,
     TRASH,
     WALK,
