@@ -119,8 +119,9 @@ public class PlayerControl : MonoBehaviour
             {
                 m_SeeNote = false;
                 m_HUD.HideNote();
+                //return;
             }
-            else
+            else //if (!m_SeeNote)
             {
                 m_SeeNote = true;
                 m_HUD.DisplayNote();

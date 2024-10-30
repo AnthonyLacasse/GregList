@@ -125,7 +125,7 @@ public class RulesManager : MonoBehaviour
         m_Strike++;
         m_Hud.WriteInRed(m_CurrentRule);
         Debug.Log("Strike");
-        if(m_Strike > 5) 
+        if(m_Strike >= m_MaxStrikes)
         {
             LoseGame();
         }

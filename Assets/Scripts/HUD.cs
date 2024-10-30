@@ -66,7 +66,6 @@ public class HUD : MonoBehaviour
         m_InteractGroup.alpha = 0f;
     }
 
-
     public void WriteInRed(int rule)
     {
         m_RulesOnNote[rule].color = Color.red;
@@ -80,13 +79,19 @@ public class HUD : MonoBehaviour
 
     public void DisplayNote()
     {
-
+        if (m_HideRulesRoutine != null)
+        {
+            StopCoroutine(m_HideRulesRoutine);
+        }
         m_ShowRulesRoutine = StartCoroutine(ShowRulesRoutine());
     }
 
     public void HideNote()
     {
-
+        if(m_ShowRulesRoutine != null)
+        {
+            StopCoroutine(m_ShowRulesRoutine);
+        }
         m_HideRulesRoutine = StartCoroutine(HideRulesRoutine());
     }
 
@@ -117,7 +122,7 @@ public class HUD : MonoBehaviour
         while (m_RulePanel.transform.localPosition != m_FinalRulePosition)
         {
             m_Elapsed += Time.deltaTime;
-            m_RulePanel.transform.localPosition = Vector3.Lerp(m_RulesHiddenPosition, m_FinalRulePosition, m_Elapsed);
+            m_RulePanel.transform.localPosition = Vector3.Lerp(m_RulePanel.transform.localPosition, m_FinalRulePosition, m_Elapsed);
             yield return null;
         }
 
@@ -130,10 +135,9 @@ public class HUD : MonoBehaviour
         while (m_RulePanel.transform.localPosition != m_RulesHiddenPosition)
         {
             m_Elapsed += Time.deltaTime;
-            m_RulePanel.transform.localPosition = Vector3.Lerp(m_FinalRulePosition, m_RulesHiddenPosition, m_Elapsed);
+            m_RulePanel.transform.localPosition = Vector3.Lerp(m_RulePanel.transform.localPosition, m_RulesHiddenPosition, m_Elapsed);
             yield return null;
         }
-
     }
 
     private IEnumerator EndGameRoutine()
@@ -159,7 +163,6 @@ public class HUD : MonoBehaviour
     {
         float elapsed = 0;
         m_Scroll.alpha = 1f;
-        Debug.Log("Showing");
 
         while (elapsed < 1.5f)
         {
@@ -167,8 +170,6 @@ public class HUD : MonoBehaviour
             m_Scroll.alpha = Mathf.Lerp(1, 0, elapsed / 1.5f);
             yield return null;
 
-
-            Debug.Log("ByeBye");
             StopCoroutine(RuleCompletedRoutine());
         }
     }

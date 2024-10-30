@@ -7,7 +7,7 @@ using UnityEngine;
 public class MorningRule : Rule
 {
     public List<GameObject> plantsPrefabs;
-
+      
     public int m_NumberOfPlants;
 
     public int m_RoomsToVisit;
