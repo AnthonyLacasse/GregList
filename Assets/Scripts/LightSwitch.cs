@@ -28,7 +28,7 @@ public class LightSwitch : MonoBehaviour, Interactable
 
     public void Use()
     {
-        AudioManager.GetInstance().PlaySound(EClipType.LIGHTSWITCH);
+        AudioManager.Instance.PlaySound(EClipType.LIGHTSWITCH);
         foreach (Light light in m_Lights)
         {
             light.enabled = !light.enabled;

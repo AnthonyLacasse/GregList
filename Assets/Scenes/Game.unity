@@ -1207,6 +1207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 20867694}
   - component: {fileID: 20867695}
+  - component: {fileID: 20867696}
   m_Layer: 0
   m_Name: TVRoom
   m_TagString: Room
@@ -1250,6 +1251,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.349061, y: 2.398261, z: 6.476725}
   m_Center: {x: -0.17953062, y: -0.22396207, z: 0.0440166}
+--- !u!114 &20867696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20867693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdbc1d15137963d4db66eed6b693888e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Theme: 3
 --- !u!1001 &22014371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7184,6 +7198,7 @@ GameObject:
   m_Component:
   - component: {fileID: 94591379}
   - component: {fileID: 94591380}
+  - component: {fileID: 94591381}
   m_Layer: 0
   m_Name: GirlBedroom
   m_TagString: Room
@@ -7227,6 +7242,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.0348387, y: 2.5, z: 5.3237457}
   m_Center: {x: 1.6024194, y: 0, z: -1.0584469}
+--- !u!114 &94591381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94591378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdbc1d15137963d4db66eed6b693888e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Theme: 7
 --- !u!1001 &96776490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10173,6 +10201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 151479911}
   - component: {fileID: 151479912}
+  - component: {fileID: 151479913}
   m_Layer: 0
   m_Name: GuestBedroom
   m_TagString: Room
@@ -10216,6 +10245,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.0348387, y: 2.5, z: 5.3237457}
   m_Center: {x: 1.6024194, y: 0, z: -1.0584469}
+--- !u!114 &151479913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151479910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdbc1d15137963d4db66eed6b693888e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Theme: 7
 --- !u!1001 &154743375
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17346,6 +17388,9 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 2485e8e4ca8bed74c91136caf345acb5, type: 3}
   - type: 1
     clip: {fileID: 8300000, guid: ceb0609545ce1f84eb0f5196e3c25738, type: 3}
+  m_Themes:
+  - type: 0
+    clip: {fileID: 0}
 --- !u!4 &254844534 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6555808085471710853, guid: f09d3b1abdcbcd143819865b0a904208, type: 3}
@@ -19818,6 +19863,7 @@ GameObject:
   m_Component:
   - component: {fileID: 290008050}
   - component: {fileID: 290008051}
+  - component: {fileID: 290008052}
   m_Layer: 0
   m_Name: GroundBathroom
   m_TagString: Room
@@ -19861,6 +19907,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.349061, y: 2.398261, z: 2}
   m_Center: {x: -0.17953062, y: -0.22396204, z: 0}
+--- !u!114 &290008052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290008049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdbc1d15137963d4db66eed6b693888e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Theme: 4
 --- !u!4 &290462816 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5112205044712984972, guid: 33f37ff2dfc8eef4881506f5cf6026bf, type: 3}
@@ -26339,6 +26398,7 @@ GameObject:
   m_Component:
   - component: {fileID: 383165223}
   - component: {fileID: 383165224}
+  - component: {fileID: 383165225}
   m_Layer: 0
   m_Name: Office
   m_TagString: Room
@@ -26382,6 +26442,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.5, y: 2.5, z: 4.05}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &383165225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383165222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdbc1d15137963d4db66eed6b693888e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Theme: 5
 --- !u!1001 &384195611
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27131,6 +27204,7 @@ GameObject:
   m_Component:
   - component: {fileID: 401928408}
   - component: {fileID: 401928409}
+  - component: {fileID: 401928410}
   m_Layer: 0
   m_Name: DinningRoom
   m_TagString: Room
@@ -27174,6 +27248,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.374499, y: 2.398261, z: 4.365014}
   m_Center: {x: 0.7730653, y: -0.22396207, z: -0.3203206}
+--- !u!114 &401928410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401928407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdbc1d15137963d4db66eed6b693888e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Theme: 1
 --- !u!1001 &405805450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31141,6 +31228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 467008153}
   - component: {fileID: 467008154}
+  - component: {fileID: 467008155}
   m_Layer: 0
   m_Name: Kitchen
   m_TagString: Room
@@ -31184,6 +31272,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.2077303, y: 2.398261, z: 5.3210044}
   m_Center: {x: 0.68968105, y: -0.22396207, z: -0.940645}
+--- !u!114 &467008155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467008152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdbc1d15137963d4db66eed6b693888e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Theme: 2
 --- !u!1001 &468258645
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41762,6 +41863,7 @@ GameObject:
   m_Component:
   - component: {fileID: 617665485}
   - component: {fileID: 617665486}
+  - component: {fileID: 617665487}
   m_Layer: 0
   m_Name: MasterBedroom
   m_TagString: Room
@@ -41805,6 +41907,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.5, y: 2.5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &617665487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617665484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdbc1d15137963d4db66eed6b693888e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Theme: 7
 --- !u!1001 &618416153
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -102822,6 +102937,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1563788608}
   - component: {fileID: 1563788609}
+  - component: {fileID: 1563788610}
   m_Layer: 0
   m_Name: UpperBathroom
   m_TagString: Room
@@ -102865,6 +102981,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.83, y: 2.5, z: 1.84}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1563788610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563788607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdbc1d15137963d4db66eed6b693888e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Theme: 4
 --- !u!1 &1566133264
 GameObject:
   m_ObjectHideFlags: 0
@@ -112231,6 +112360,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1703269819}
   - component: {fileID: 1703269820}
+  - component: {fileID: 1703269821}
   m_Layer: 0
   m_Name: LaundryRoom
   m_TagString: Room
@@ -112274,6 +112404,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.0348387, y: 2.5, z: 2.3166752}
   m_Center: {x: 1.6024194, y: 0, z: -1.050313}
+--- !u!114 &1703269821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703269818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdbc1d15137963d4db66eed6b693888e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Theme: 6
 --- !u!1001 &1704196384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -124363,6 +124506,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1889334964}
   - component: {fileID: 1889334965}
+  - component: {fileID: 1889334966}
   m_Layer: 0
   m_Name: LivingRoom
   m_TagString: Room
@@ -124406,6 +124550,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.67946, y: 2.398261, z: 5.2641315}
   m_Center: {x: 0.6205847, y: -0.22396207, z: 0.12923813}
+--- !u!114 &1889334966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889334963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdbc1d15137963d4db66eed6b693888e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Theme: 0
 --- !u!4 &1893055263 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6105868858969384949, guid: 4a224845d45d96449858a029d9095790, type: 3}

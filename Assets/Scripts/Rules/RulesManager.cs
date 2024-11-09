@@ -136,7 +136,7 @@ public class RulesManager : MonoBehaviour
     {
         m_Hud.CheckOff(m_CurrentRule);
         m_Hud.OnRuleCompleted();
-        AudioManager.GetInstance().PlaySound(EClipType.COMPLETE_TASK);
+        AudioManager.Instance.PlaySound(EClipType.COMPLETE_TASK);
         m_CurrentRule++;
         Debug.Log("RuleCompleted");
 

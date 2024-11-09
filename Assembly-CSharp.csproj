@@ -71,6 +71,7 @@
     <Compile Include="Assets\AtmosphericHouse\Scripts\SimplePlayerController.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureShaderUniforms.cs" />
+    <Compile Include="Assets\Scripts\Room.cs" />
     <Compile Include="Assets\Scripts\Checkpoint.cs" />
     <Compile Include="Assets\AtmosphericHouse\Scripts\LightOptimize.cs" />
     <Compile Include="Assets\Scripts\DisposableObject.cs" />

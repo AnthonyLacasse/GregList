@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Room : MonoBehaviour
@@ -7,13 +8,23 @@ public class Room : MonoBehaviour
     [SerializeField] private EThemeType m_Theme;
 
 
-    public void OnTriggerEnter(Collision other)
+    public void OnTriggerEnter(Collider other)
     {
-        AudioManager.GetInstance().PlayTheme(m_Theme);
+        PlayerControl player = other.GetComponent<PlayerControl>();
+
+        if ( player != null && AudioManager.Instance.Turntable != null)
+        {
+            AudioManager.Instance.PlayTheme(m_Theme);
+        }
     }
 
-    public void OnTriggerExit(Collision other)
+    public void OnTriggerExit(Collider other)
     {
-        AudioManager.GetInstance().StopTheme();
+        PlayerControl player = other.GetComponent<PlayerControl>();
+
+        if (player && AudioManager.Instance.Turntable != null)
+        {
+            AudioManager.Instance.StopTheme();
+        }
     }
 }

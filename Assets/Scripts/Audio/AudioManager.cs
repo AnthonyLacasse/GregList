@@ -68,11 +68,8 @@ public class AudioManager : MonoBehaviour
         }
             
     }
+    public static AudioManager Instance => m_Instance;
 
-    public static AudioManager GetInstance()
-    {
-        return m_Instance;
-    }
     #endregion
 
     [SerializeField] private List<SoundConfig> m_Clips;
@@ -82,6 +79,10 @@ public class AudioManager : MonoBehaviour
     private AudioSource m_Turntable;
     private static Dictionary<EClipType, AudioClip> m_ClipDict;
     private static Dictionary<EThemeType, AudioClip> m_ThemeDict;
+
+    public AudioSource Turntable => m_Turntable;
+
+    
 
     private void Start()
     {        
@@ -114,12 +115,12 @@ public class AudioManager : MonoBehaviour
         availableSource.Play();
     }
 
-    public void PlayTheme(AudioClip theme)
+    public void PlayTheme(EThemeType theme)
     {
         m_Turntable = m_AudioPool.GetAvailableAudioSource();
-        if (m_Turntable == null)  { return; }
+        if (m_Turntable == null) { return; }
 
-        m_Turntable.clip = theme;
+        m_Turntable.clip = m_ThemeDict[theme];
         m_Turntable.loop = true;
         m_Turntable.Play();
     }
@@ -128,9 +129,9 @@ public class AudioManager : MonoBehaviour
     {
         if (m_Turntable != null)
         {
-            m_Turntable.Stop;
+            m_Turntable.Stop();
             m_Turntable = null;
         }
     }
-    
+
 }
