@@ -98,10 +98,10 @@ public class AudioManager : MonoBehaviour
             m_ClipDict.Add(clip.type, clip.clip);
         }
 
-        foreach (ThemeConfig theme in m_Themes)
-        {
-            m_ThemeDict.Add(theme.type, theme.clip);
-        }
+        //foreach (ThemeConfig theme in m_Themes)
+        //{
+        //    m_ThemeDict.Add(theme.type, theme.clip);
+        //}
 
     }
 
@@ -115,23 +115,23 @@ public class AudioManager : MonoBehaviour
         availableSource.Play();
     }
 
-    public void PlayTheme(EThemeType theme)
-    {
-        m_Turntable = m_AudioPool.GetAvailableAudioSource();
-        if (m_Turntable == null) { return; }
+    //public void PlayTheme(EThemeType theme)
+    //{
+    //    m_Turntable = m_AudioPool.GetAvailableAudioSource();
+    //    if (m_Turntable == null) { return; }
 
-        m_Turntable.clip = m_ThemeDict[theme];
-        m_Turntable.loop = true;
-        m_Turntable.Play();
-    }
+    //    m_Turntable.clip = m_ThemeDict[theme];
+    //    m_Turntable.loop = true;
+    //    m_Turntable.Play();
+    //}
 
-    public void StopTheme()
-    {
-        if (m_Turntable != null)
-        {
-            m_Turntable.Stop();
-            m_Turntable = null;
-        }
-    }
+    //public void StopTheme()
+    //{
+    //    if (m_Turntable != null)
+    //    {
+    //        m_Turntable.Stop();
+    //        m_Turntable = null;
+    //    }
+    //}
 
 }

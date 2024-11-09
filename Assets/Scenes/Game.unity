@@ -7759,37 +7759,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5482673519836240885, guid: 1180dca2ecafdae4582560550af1c4e1, type: 3}
   m_PrefabInstance: {fileID: 1774840862}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &100708678
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 100708679}
-  m_Layer: 0
-  m_Name: Spot6
-  m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &100708679
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100708678}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.753, y: 0.865, z: 1.12}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1091902247}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &101185765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18496,7 +18465,7 @@ GameObject:
   m_Component:
   - component: {fileID: 269554460}
   m_Layer: 0
-  m_Name: Spot11
+  m_Name: Spot10
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -22279,7 +22248,7 @@ GameObject:
   m_Component:
   - component: {fileID: 319221940}
   m_Layer: 0
-  m_Name: Spot10
+  m_Name: Spot9
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -38381,7 +38350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 573001434}
   m_Layer: 0
-  m_Name: Spot7
+  m_Name: Spot6
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -47141,6 +47110,7 @@ Transform:
   m_Children:
   - {fileID: 2038604402}
   - {fileID: 254326786}
+  - {fileID: 1864770838}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &690793775
@@ -64967,7 +64937,7 @@ GameObject:
   m_Component:
   - component: {fileID: 976620368}
   m_Layer: 0
-  m_Name: Spot8
+  m_Name: Spot7
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -68061,7 +68031,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1029318997}
   m_Layer: 0
-  m_Name: Spot9
+  m_Name: Spot8
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -72428,7 +72398,6 @@ Transform:
   - {fileID: 2018767205}
   - {fileID: 1620720169}
   - {fileID: 1786521692}
-  - {fileID: 100708679}
   - {fileID: 573001434}
   - {fileID: 976620368}
   - {fileID: 1029318997}
@@ -73960,7 +73929,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1117302383}
   m_Layer: 0
-  m_Name: Spot12
+  m_Name: Spot11
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -97068,7 +97037,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1476038112}
   m_Layer: 0
-  m_Name: Spot14
+  m_Name: Spot13
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -123216,12 +123185,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1864770836}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1332.0138, y: -381.6824, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 688283604}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1867166415
 PrefabInstance:
@@ -127579,7 +127548,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1950042431}
   m_Layer: 0
-  m_Name: Spot13
+  m_Name: Spot12
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -135147,7 +135116,6 @@ MonoBehaviour:
   - {fileID: 2018767205}
   - {fileID: 1620720169}
   - {fileID: 1786521692}
-  - {fileID: 100708679}
   - {fileID: 573001434}
   - {fileID: 976620368}
   - {fileID: 1029318997}
@@ -135169,7 +135137,7 @@ MonoBehaviour:
   - {fileID: 147094630}
   - {fileID: 1281419463}
   - {fileID: 343910349}
-  m_MaxStrikes: 3
+  m_MaxStrikes: 2
 --- !u!4 &2038604402
 Transform:
   m_ObjectHideFlags: 0
@@ -152630,7 +152598,6 @@ SceneRoots:
   - {fileID: 315735836}
   - {fileID: 1631407289}
   - {fileID: 1997268631}
-  - {fileID: 1864770838}
   - {fileID: 688283604}
   - {fileID: 982544643}
   - {fileID: 2074824811}
