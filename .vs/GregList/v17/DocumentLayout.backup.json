@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|D:\\Anthony_Lacasse\\TravailPratique\\GregList\\assets\\scripts\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|D:\\Anthony_Lacasse\\TravailPratique\\GregList\\assets\\scripts\\rules\\rulesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rules\\rulesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|d:\\anthony_lacasse\\travailpratique\\greglist\\assets\\scripts\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,15 +15,11 @@
       "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|D:\\Anthony_Lacasse\\TravailPratique\\GregList\\assets\\scripts\\rules\\rulesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rules\\rulesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|D:\\Anthony_Lacasse\\TravailPratique\\GregList\\assets\\scripts\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|d:\\anthony_lacasse\\travailpratique\\greglist\\assets\\scripts\\rules\\morningrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|D:\\Anthony_Lacasse\\TravailPratique\\GregList\\assets\\scripts\\rules\\morningrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rules\\morningrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -62,11 +62,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PlayerControl.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\PlayerControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerControl.cs",
@@ -75,18 +75,17 @@
               "ViewState": "AgIAAD4AAAAAAAAAAAAwwHsAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-17T14:36:14.907Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "RulesManager.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Rules\\RulesManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Rules\\RulesManager.cs",
               "ToolTip": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\Rules\\RulesManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Rules\\RulesManager.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAUwIoAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAAwIQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-18T17:21:57.929Z",
               "EditorCaption": ""
@@ -101,18 +100,17 @@
               "RelativeToolTip": "Assets\\Scripts\\Rules\\MorningRule.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T16:35:05.472Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-17T16:35:05.472Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "HUD.cs",
               "DocumentMoniker": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\HUD.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HUD.cs",
               "ToolTip": "D:\\Anthony_Lacasse\\TravailPratique\\GregList\\Assets\\Scripts\\HUD.cs",
               "RelativeToolTip": "Assets\\Scripts\\HUD.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAYwG4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAIBZwG4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-17T14:35:17.504Z",
               "EditorCaption": ""
@@ -139,8 +137,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Note.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T19:46:31.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-28T19:46:31.787Z"
             },
             {
               "$type": "Document",

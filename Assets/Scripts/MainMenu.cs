@@ -20,6 +20,9 @@ public class MainMenu : MonoBehaviour
         m_StartingHandPosition = m_Hand.transform.localPosition;
         m_Elapsed = 0;
         m_HandRoutine = StartCoroutine(RaisePhoneRoutine());
+
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     public void OnStartGamePress()

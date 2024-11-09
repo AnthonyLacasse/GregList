@@ -35,8 +35,10 @@ public class HUD : MonoBehaviour
     private void Start()
     {
         m_RulesHiddenPosition = m_RulePanel.transform.localPosition;
-        WriteNote();        
+        WriteNote();
 
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
     private void WriteNote()
     {
