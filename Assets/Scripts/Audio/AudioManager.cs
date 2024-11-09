@@ -19,10 +19,32 @@ public enum EClipType
     COUNT
 }
 
+public enum EThemeType
+{
+    LIVING_ROOM,
+    DINING_ROOM,
+    KITCHEN,
+    DEN,
+    BATHROOM,
+    STUDY,
+    LAVATORY,
+    BEDROOM,
+
+    COUNT
+}
+
+
 [System.Serializable]
 public struct SoundConfig
 {
     public EClipType type;
+    public AudioClip clip;
+}
+
+[System.Serializable]
+public struct ThemeConfig
+{
+    public EThemeType type;
     public AudioClip clip;
 }
 
@@ -54,9 +76,12 @@ public class AudioManager : MonoBehaviour
     #endregion
 
     [SerializeField] private List<SoundConfig> m_Clips;
+    [SerializeField] private List<ThemeConfig> m_Themes;
 
     private AudioPool m_AudioPool;
+    private AudioSource m_Turntable;
     private static Dictionary<EClipType, AudioClip> m_ClipDict;
+    private static Dictionary<EThemeType, AudioClip> m_ThemeDict;
 
     private void Start()
     {        
@@ -71,6 +96,12 @@ public class AudioManager : MonoBehaviour
         {
             m_ClipDict.Add(clip.type, clip.clip);
         }
+
+        foreach (ThemeConfig theme in m_Themes)
+        {
+            m_ThemeDict.Add(theme.type, theme.clip);
+        }
+
     }
 
     public void PlaySound(EClipType type)
@@ -83,5 +114,23 @@ public class AudioManager : MonoBehaviour
         availableSource.Play();
     }
 
+    public void PlayTheme(AudioClip theme)
+    {
+        m_Turntable = m_AudioPool.GetAvailableAudioSource();
+        if (m_Turntable == null)  { return; }
+
+        m_Turntable.clip = theme;
+        m_Turntable.loop = true;
+        m_Turntable.Play();
+    }
+
+    public void StopTheme()
+    {
+        if (m_Turntable != null)
+        {
+            m_Turntable.Stop;
+            m_Turntable = null;
+        }
+    }
     
 }
