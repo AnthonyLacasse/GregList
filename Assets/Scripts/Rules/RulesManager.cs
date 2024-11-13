@@ -15,13 +15,16 @@ public class RulesManager : MonoBehaviour
     [SerializeField] private GameObject m_Exit;
 
     [SerializeField] private PlayerControl m_Player;
+    [SerializeField] private List<GameObject> m_Paintings;
     [SerializeField] private List<Transform> m_PlantsSpawnPoints;
     [SerializeField] private List<Transform> FailureSpots;
     [SerializeField] private List<Transform> m_FoodSpawnPoints;
+    [SerializeField] private List<Transform> m_PaintingsLocations;
     [SerializeField] private int m_MaxStrikes;
 
     private bool ListCollected = false;
     private bool PortraitsActive = false;
+    private bool TimeToRead = false;
     private bool Escape = true;
 
     private int m_CurrentRule;
@@ -96,24 +99,12 @@ public class RulesManager : MonoBehaviour
     public List<Transform> GetPlantsSpawnPoints() { return m_PlantsSpawnPoints; }
 
     public List<Transform> GetFoodSpawnPoints() { return m_FoodSpawnPoints; }
-
-    public bool GetPortraitMode()
-    {
-        return PortraitsActive;
-    }
-
-    public bool GetListCollected()
-    {
-        return ListCollected;
-    }
-
+    public bool GetPortraitMode()   { return PortraitsActive;  }
+    public void SetPortaitMode(bool portraitBehaviour) {PortraitsActive = portraitBehaviour; }
+    public bool GetListCollected() { return ListCollected; }
     public void SetListCollected() { ListCollected = true; }
-
-
-    public void SetPortaitMode(bool portraitBehaviour)
-    {
-        PortraitsActive = portraitBehaviour;
-    }
+    public void SetReadTime(bool isTime) { TimeToRead = isTime; }
+    public bool GetReadTime() { return TimeToRead; }
     public PlayerControl GetPlayer() { return m_Player; }
 
     public bool PlayerCanEscape() { return Escape; }
