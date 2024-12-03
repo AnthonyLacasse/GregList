@@ -6,6 +6,8 @@ using UnityEngine;
 public abstract class Rule : ScriptableObject 
 {
     public List<string> ruleDescription;    
+
+    public ERuleType ruleType;
     public abstract void Init();
     public abstract void CheckCompletion();
     public abstract void End();

@@ -17,6 +17,7 @@ MonoBehaviour:
   - I'm sure you will figure out something to their liking.
   - Prep a plate in the kitchen, and then plate it in the dining room.
   - Then, go upstairs and wait for them to finish before going down to clean up.
+  ruleType: 2
   foodPrefabs:
   - {fileID: 6754944931447350016, guid: 29a02781149d2e0428fc23b4890c85d4, type: 3}
   - {fileID: 7995497868466590050, guid: c5240644e1df8364aa4cea385c7cf092, type: 3}

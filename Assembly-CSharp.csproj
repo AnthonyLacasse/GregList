@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\Audio\AudioPool.cs" />
     <Compile Include="Assets\AtmosphericHouse\Scripts\SimplePlayerController.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Level.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scripts\AzureShaderUniforms.cs" />
     <Compile Include="Assets\Scripts\Room.cs" />
     <Compile Include="Assets\Scripts\Checkpoint.cs" />
@@ -142,6 +143,7 @@
     <None Include="Assets\AtmosphericHouse\BuiltIn_RP\BuiltIn_Shaders\Standard_doublesided_cutout.shader" />
     <None Include="Assets\AtmosphericHouse\Readme\Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\Picture_Frames_FREE\Documentation.txt" />
     <None Include="Assets\Azure[Sky] Dynamic Skybox\Shaders\Transparent\AzureFogCore.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />

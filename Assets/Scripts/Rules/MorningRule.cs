@@ -6,7 +6,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class MorningRule : Rule
 {
-    public List<GameObject> plantsPrefabs;
+    public List<GameObject> plantsPrefabs; 
       
     public int m_NumberOfPlants;
 
@@ -54,7 +54,7 @@ public class MorningRule : Rule
 
     private void SpawnPlants()
     {
-        List<Transform> spawnPoints = RulesManager.Instance.GetPlantsSpawnPoints();
+        List<Transform> spawnPoints = RulesManager.Instance.GetSpawnPoints(ruleType);
         List<Transform> spawnLocations = new List<Transform>();
         m_NotAFern = 0;
 

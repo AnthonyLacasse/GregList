@@ -11,15 +11,12 @@ public class RulesManager : MonoBehaviour
     [SerializeField] private AzureTimeController m_Sky;
     [SerializeField] private List<Rule> m_Rules;
     [SerializeField] private HUD m_Hud;
+    [SerializeField] private Level m_Level;
 
     [SerializeField] private GameObject m_Exit;
 
     [SerializeField] private PlayerControl m_Player;
     [SerializeField] private List<GameObject> m_Paintings;
-    [SerializeField] private List<Transform> m_PlantsSpawnPoints;
-    [SerializeField] private List<Transform> FailureSpots;
-    [SerializeField] private List<Transform> m_FoodSpawnPoints;
-    [SerializeField] private List<Transform> m_PaintingsLocations;
     [SerializeField] private int m_MaxStrikes;
 
     private bool ListCollected = false;
@@ -63,9 +60,7 @@ public class RulesManager : MonoBehaviour
         float timeLine = m_Hours + (m_Minutes / 60);
 
         m_Sky.SetTimeline(timeLine);
-
-        RulesSpawnPositions.Add(m_PlantsSpawnPoints);
-
+             
 
         m_CurrentRule = 0;
     }
@@ -95,10 +90,9 @@ public class RulesManager : MonoBehaviour
         
     }
 
-
-    public List<Transform> GetPlantsSpawnPoints() { return m_PlantsSpawnPoints; }
-
-    public List<Transform> GetFoodSpawnPoints() { return m_FoodSpawnPoints; }
+    
+    public List<Transform> GetSpawnPoints(ERuleType type) { return m_Level.GetLevelTransforms(type); }
+       
     public bool GetPortraitMode()   { return PortraitsActive;  }
     public void SetPortaitMode(bool portraitBehaviour) {PortraitsActive = portraitBehaviour; }
     public bool GetListCollected() { return ListCollected; }

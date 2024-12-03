@@ -11,6 +11,7 @@ public class NoonRule : Rule
     public List<GameObject> foodPrefabs;
 
     
+    
 
     
         
@@ -34,7 +35,7 @@ public class NoonRule : Rule
 
     private void SpawnFood()
     {
-        List<Transform> spawnPoints = RulesManager.Instance.GetFoodSpawnPoints();
+        List<Transform> spawnPoints = RulesManager.Instance.GetSpawnPoints(ruleType);
         List<GameObject> foodToInstantiate = foodPrefabs.OrderBy( x => Random.value).ToList();
 
         for (int i = 0; i < foodToInstantiate.Count; i++)
