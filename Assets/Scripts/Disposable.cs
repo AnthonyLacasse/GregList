@@ -5,39 +5,45 @@ using UnityEngine;
 
 public class Disposable : MonoBehaviour, Interactable
 {
+    [SerializeField] private string m_Color;
+    [SerializeField] private GameObject m_Child;
+    
     Color m_InitialDisposableColor;
 
     private bool m_CanInteract = true;
 
     private void Start()
     {
-        m_InitialDisposableColor = GetComponent<Renderer>().material.color;
+
+
+        m_InitialDisposableColor = m_Child.GetComponent<Renderer>().material.color;
     }
 
     public void InRange(bool inRange)
     {
         if (inRange && m_CanInteract)
         {
-            GetComponent<Renderer>().material.color = Color.yellow;
+            m_Child.GetComponent<Renderer>().material.color = Color.yellow;
         }
         else //off
         {
-            GetComponent<Renderer>().material.color = m_InitialDisposableColor;
+            m_Child.GetComponent<Renderer>().material.color = m_InitialDisposableColor;
         }
     }
 
     public void Use()
     {
-        if (m_CanInteract)
-        {
-            m_CanInteract = false;
-        }
+        RulesManager.Instance.GetActiveRule().OnRuleObjectUsed(this);
+        AudioManager.Instance.PlaySound(EClipType.TRASH);
     }
+
+    public string GetColor() { return m_Color; }
 
     InteractibleType Interactable.GetType()
     {
-        return InteractibleType.PLANT;
+        return InteractibleType.DISPOSABLE;
     }
+   
 
     public bool CanInteract()
     {

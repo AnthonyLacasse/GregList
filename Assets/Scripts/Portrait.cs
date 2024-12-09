@@ -53,7 +53,9 @@ public class Portrait : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (RulesManager.Instance.GetPortraitMode())
+        PlayerControl player = other.GetComponent<PlayerControl>();
+
+        if (player != null && RulesManager.Instance.GetPortraitMode())
         {
             m_PortraitRoutine = StartCoroutine(PortraitGazeRoutine());
         }
@@ -61,9 +63,14 @@ public class Portrait : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (m_PortraitRoutine != null)
+        PlayerControl player = other.GetComponent<PlayerControl>();
+
+        if (player != null && RulesManager.Instance.GetPortraitMode())
         {
-            StopCoroutine(m_PortraitRoutine);
+            if (m_PortraitRoutine != null)
+            {
+                StopCoroutine(m_PortraitRoutine);
+            }
         }
     }
 

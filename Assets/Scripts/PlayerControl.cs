@@ -40,7 +40,7 @@ public class PlayerControl : MonoBehaviour
     {
         Move();
         UseObjects();
-        ConsultNote();
+        ReadNote();
     }
 
     private void Move()
@@ -111,7 +111,7 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
-    private void ConsultNote()
+    private void ReadNote()
     {
         if (RulesManager.Instance.GetListCollected() && Input.GetKeyDown(KeyCode.Tab))
         {
@@ -119,7 +119,7 @@ public class PlayerControl : MonoBehaviour
             {
                 m_SeeNote = false;
                 m_HUD.HideNote();
-                //return;
+                
             }
             else //if (!m_SeeNote)
             {
@@ -129,10 +129,21 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        Room room = other.GetComponent<Room>();
+        if (room != null) 
+        {
+            AudioManager.Instance.PlayTheme(room.Theme);
+        }
+    }
+
     private void OnTriggerExit(Collider other)
     {
+
         if (other.CompareTag("Room"))
         {
+            AudioManager.Instance.StopTheme();
             m_VisitingRoom?.Invoke(other.gameObject);
         }
     }

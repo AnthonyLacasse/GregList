@@ -1208,7 +1208,7 @@ GameObject:
   - component: {fileID: 20867694}
   - component: {fileID: 20867695}
   - component: {fileID: 20867696}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TVRoom
   m_TagString: Room
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -7199,7 +7199,7 @@ GameObject:
   - component: {fileID: 94591379}
   - component: {fileID: 94591380}
   - component: {fileID: 94591381}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: GirlBedroom
   m_TagString: Room
   m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
@@ -10171,7 +10171,7 @@ GameObject:
   - component: {fileID: 151479911}
   - component: {fileID: 151479912}
   - component: {fileID: 151479913}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: GuestBedroom
   m_TagString: Room
   m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
@@ -17302,8 +17302,26 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 2485e8e4ca8bed74c91136caf345acb5, type: 3}
   - type: 1
     clip: {fileID: 8300000, guid: ceb0609545ce1f84eb0f5196e3c25738, type: 3}
+  - type: 3
+    clip: {fileID: 8300000, guid: e8f94466db50cbd49a8cdc81a2135087, type: 3}
+  - type: 10
+    clip: {fileID: 8300000, guid: 540b4ad190124c94091e0dd2370c3249, type: 3}
   m_Themes:
   - type: 0
+    clip: {fileID: 0}
+  - type: 1
+    clip: {fileID: 8300000, guid: b488ec64e547c3247a3fee6c7a7218fc, type: 3}
+  - type: 2
+    clip: {fileID: 0}
+  - type: 3
+    clip: {fileID: 0}
+  - type: 4
+    clip: {fileID: 0}
+  - type: 5
+    clip: {fileID: 0}
+  - type: 6
+    clip: {fileID: 0}
+  - type: 7
     clip: {fileID: 0}
 --- !u!4 &254844534 stripped
 Transform:
@@ -19778,7 +19796,7 @@ GameObject:
   - component: {fileID: 290008050}
   - component: {fileID: 290008051}
   - component: {fileID: 290008052}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: GroundBathroom
   m_TagString: Room
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -26236,7 +26254,7 @@ GameObject:
   - component: {fileID: 383165223}
   - component: {fileID: 383165224}
   - component: {fileID: 383165225}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Office
   m_TagString: Room
   m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
@@ -27042,7 +27060,7 @@ GameObject:
   - component: {fileID: 401928408}
   - component: {fileID: 401928409}
   - component: {fileID: 401928410}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: DinningRoom
   m_TagString: Room
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -31066,7 +31084,7 @@ GameObject:
   - component: {fileID: 467008153}
   - component: {fileID: 467008154}
   - component: {fileID: 467008155}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Kitchen
   m_TagString: Room
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -41701,7 +41719,7 @@ GameObject:
   - component: {fileID: 617665485}
   - component: {fileID: 617665486}
   - component: {fileID: 617665487}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: MasterBedroom
   m_TagString: Room
   m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
@@ -102965,7 +102983,7 @@ GameObject:
   - component: {fileID: 1563788608}
   - component: {fileID: 1563788609}
   - component: {fileID: 1563788610}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: UpperBathroom
   m_TagString: Room
   m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
@@ -104084,7 +104102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -112414,7 +112432,7 @@ GameObject:
   - component: {fileID: 1703269819}
   - component: {fileID: 1703269820}
   - component: {fileID: 1703269821}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: LaundryRoom
   m_TagString: Room
   m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
@@ -124555,7 +124573,7 @@ GameObject:
   - component: {fileID: 1889334964}
   - component: {fileID: 1889334965}
   - component: {fileID: 1889334966}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: LivingRoom
   m_TagString: Room
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -134988,13 +135006,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Sky: {fileID: 2024768318}
-  m_Rules:
-  - {fileID: 11400000, guid: d738788f988be894cab1ef2fb82a277d, type: 2}
+  m_LevelRules:
+  - Type: 0
+    AvailableRules:
+    - {fileID: 11400000, guid: d738788f988be894cab1ef2fb82a277d, type: 2}
+    - {fileID: 11400000, guid: b5026c01a3b155c45b4b8158d153ddfb, type: 2}
   m_Hud: {fileID: 1997268632}
   m_Level: {fileID: 1283846086}
   m_Exit: {fileID: 1449291607}
   m_Player: {fileID: 982544646}
-  m_Paintings: []
   m_MaxStrikes: 2
 --- !u!4 &2038604402
 Transform:

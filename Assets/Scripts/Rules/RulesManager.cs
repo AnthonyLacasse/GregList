@@ -3,20 +3,38 @@ using UnityEngine;
 using UnityEngine.AzureSky;
 using UnityEngine.SceneManagement;
 
+public enum EMomentOfDay
+{
+    MORNING,
+    NOON,
+    AFTERNOON,
+    TWILIGHT,
+    NIGHT,
+    DAYBREAK,
+
+    COUNT
+}
+
+[System.Serializable]
+public struct RulesByMoment
+{
+    public ERuleType Type;
+    public List<Rule> AvailableRules;
+}
+
 
 public class RulesManager : MonoBehaviour
 {
     private static RulesManager m_Instance;
 
     [SerializeField] private AzureTimeController m_Sky;
-    [SerializeField] private List<Rule> m_Rules;
+    [SerializeField] private List<RulesByMoment> m_LevelRules;
     [SerializeField] private HUD m_Hud;
     [SerializeField] private Level m_Level;
 
     [SerializeField] private GameObject m_Exit;
 
     [SerializeField] private PlayerControl m_Player;
-    [SerializeField] private List<GameObject> m_Paintings;
     [SerializeField] private int m_MaxStrikes;
 
     private bool ListCollected = false;
@@ -26,14 +44,14 @@ public class RulesManager : MonoBehaviour
 
     private int m_CurrentRule;
     private int m_Strike;
-    private int m_Rooms;
-
+   
 
 
     private int m_Hours;
     private int m_Minutes;
 
     private List<List<Transform>> RulesSpawnPositions = new();
+    private List<Rule> m_CurrentSessionRules = new();
 
 
     public static RulesManager Instance
@@ -60,8 +78,8 @@ public class RulesManager : MonoBehaviour
         float timeLine = m_Hours + (m_Minutes / 60);
 
         m_Sky.SetTimeline(timeLine);
-             
 
+        SetSessionRules();
         m_CurrentRule = 0;
     }
     
@@ -90,6 +108,15 @@ public class RulesManager : MonoBehaviour
         
     }
 
+    private void SetSessionRules()
+    {
+        foreach (RulesByMoment rule in m_LevelRules)
+        {
+            int selection = Random.Range(0, 100) % rule.AvailableRules.Count;
+            m_CurrentSessionRules.Add(rule.AvailableRules[1]);
+        }
+    }
+
     
     public List<Transform> GetSpawnPoints(ERuleType type) { return m_Level.GetLevelTransforms(type); }
        
@@ -105,9 +132,10 @@ public class RulesManager : MonoBehaviour
 
     public List<Transform> GetRuleSpawnPoints() { return RulesSpawnPositions[m_CurrentRule]; }
 
-    public void Striked()
+    public void Strike()
     {
         m_Strike++;
+        AudioManager.Instance.PlaySound(EClipType.STRIKE);
         m_Hud.WriteInRed(m_CurrentRule);
         Debug.Log("Strike");
         if(m_Strike >= m_MaxStrikes)
@@ -125,7 +153,7 @@ public class RulesManager : MonoBehaviour
         m_CurrentRule++;
         Debug.Log("RuleCompleted");
 
-        if (m_CurrentRule == m_Rules.Count)
+        if (m_CurrentRule == m_CurrentSessionRules.Count)
         {
             if (m_Strike > 4)
             {
@@ -135,29 +163,25 @@ public class RulesManager : MonoBehaviour
         m_Exit.SetActive(false);
             return;
         }
-        m_Rules[m_CurrentRule].Init();
+        m_CurrentSessionRules[m_CurrentRule].Init();
     }
 
-    public List<Rule> GetRules() { return m_Rules; }
+    public List<Rule> GetRules() { return m_CurrentSessionRules; }
     public string GetRulesDescriptions()
     {
         string descriptionList = "";
 
-        foreach (Rule rule in m_Rules)
+        foreach (Rule rule in m_CurrentSessionRules)
         {
             for (int i = 0; i < rule.ruleDescription.Count; i++)
             {
                 descriptionList += rule.ruleDescription[i];
             }
         }
-
         return descriptionList;
     }
 
-    public Rule GetActiveRule()
-    {
-        return m_Rules[m_CurrentRule];
-    }
+    public Rule GetActiveRule() {  return m_CurrentSessionRules[m_CurrentRule]; }
 
     public void LoseGame()
     {

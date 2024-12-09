@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab977feedb52b1541b37c1d786f4fb2f, type: 3}
-  m_Name: Morning Rule Plants
+  m_Name: Plant Rule
   m_EditorClassIdentifier: 
   ruleDescription:
   - 'Start your day by watering the plants around the house. '
-  - 'Make sure no fern are watered however as they tend to dislike being watered
+  - 'However, skip the plants with thin, long leaves as they dislike being watered
     too often. '
   - 'Visit all rooms, and forget no plants. '
+  ruleType: 0
   plantsPrefabs:
   - {fileID: 5869174410389466359, guid: f4007abfecca681449208ae7342f8b46, type: 3}
   - {fileID: 3887203265843613310, guid: 7980abe9ce32cfe439706bd5955b38e9, type: 3}

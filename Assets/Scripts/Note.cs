@@ -28,6 +28,7 @@ public class Note : MonoBehaviour, Interactable
     {
         RulesManager.Instance.SetListCollected();
         RulesManager.Instance.GetActiveRule().Init();
+        m_HUD.WriteNote();
         m_HUD.DisplayNote();
         Destroy(gameObject);
     }

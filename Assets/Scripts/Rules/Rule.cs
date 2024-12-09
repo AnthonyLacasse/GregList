@@ -13,4 +13,5 @@ public abstract class Rule : ScriptableObject
     public abstract void End();
     public virtual void Update() { }
     public virtual void OnRuleObjectUsed() { }
+    public virtual void OnRuleObjectUsed(Disposable obj) { }
 }

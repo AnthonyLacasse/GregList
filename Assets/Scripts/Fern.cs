@@ -30,7 +30,7 @@ public class Fern : MonoBehaviour, Interactable
         {
             AudioManager.Instance.PlaySound(EClipType.WATER_PLANTS);
             m_CanInteract = false;
-            RulesManager.Instance.Striked();
+            RulesManager.Instance.Strike();
         }
     }
 

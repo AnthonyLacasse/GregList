@@ -4,7 +4,7 @@ using System.Globalization;
 using UnityEngine;
 
 [CreateAssetMenu]
-public class MorningRule : Rule
+public class PlantRule : Rule
 {
     public List<GameObject> plantsPrefabs; 
       
@@ -40,14 +40,14 @@ public class MorningRule : Rule
         {
             if (m_WateredPlants < m_NotAFern)
             {
-                RulesManager.Instance.Striked();
+                RulesManager.Instance.Strike();
             }
             End();
         }
     }
 
     public override void End()
-    {
+    {     
         RulesManager.Instance.GetPlayer().m_VisitingRoom -= VisitedRoom;
         RulesManager.Instance.RuleCompleted();
     }
