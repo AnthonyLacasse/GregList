@@ -112,7 +112,7 @@ public class RulesManager : MonoBehaviour
     {
         foreach (RulesByMoment rule in m_LevelRules)
         {
-            int selection = Random.Range(0, 100) % rule.AvailableRules.Count;
+            int selection = Random.Range(0, rule.AvailableRules.Count);
             m_CurrentSessionRules.Add(rule.AvailableRules[1]);
         }
     }
@@ -155,7 +155,7 @@ public class RulesManager : MonoBehaviour
 
         if (m_CurrentRule == m_CurrentSessionRules.Count)
         {
-            if (m_Strike > 4)
+            if (m_Strike > m_MaxStrikes)
             {
                 LoseGame();
                 return;

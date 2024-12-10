@@ -19,7 +19,7 @@ public class HUD : MonoBehaviour
     [SerializeField] private TextMeshProUGUI m_FinalText;
     [SerializeField] private CanvasGroup m_FinalTextGroup;
     [SerializeField] private TextMeshProUGUI m_RuleTextPrefab;
-
+    [SerializeField] private SceneTransition m_SceneTransition;
 
 
     private Vector3 m_RulesHiddenPosition;
@@ -154,7 +154,7 @@ public class HUD : MonoBehaviour
             if (elapsed > 1)
             {
                 yield return new WaitForSeconds(5f);
-                SceneManager.LoadScene("TitleScene");
+                m_SceneTransition.LoadScene("TitleScene");
 
             }
         }

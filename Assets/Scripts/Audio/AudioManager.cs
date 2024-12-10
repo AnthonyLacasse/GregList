@@ -113,7 +113,7 @@ public class AudioManager : MonoBehaviour
         if (availableSource == null)  { return; }
 
         availableSource.clip = m_ClipDict[type];
-
+        availableSource.loop = false;
         availableSource.Play();
     }
 

@@ -64,7 +64,7 @@ public class GarbageRule : Rule
 
     public override void End()
     {
-        for (int i = m_Collection.Count - 1; i > 0 ; i--)
+        for (int i = m_Collection.Count - 1; i >= 0 ; i--)
         {
             Disposable garbage = m_Collection[i];
             m_Collection.Remove(garbage);

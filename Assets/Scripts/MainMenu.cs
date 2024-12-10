@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] private Image m_Hand;
     [SerializeField] private Vector3 m_FinalHandPosition;
+    [SerializeField] private SceneTransition m_SceneTransition;
 
     private Vector3 m_StartingHandPosition;
     private float m_Elapsed;
@@ -27,7 +28,7 @@ public class MainMenu : MonoBehaviour
 
     public void OnStartGamePress()
     {
-        SceneManager.LoadScene("Game");
+        m_SceneTransition.LoadScene("Game");
     }
 
     public void OnQuitPress()
