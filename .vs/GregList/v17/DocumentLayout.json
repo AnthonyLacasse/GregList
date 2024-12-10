@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "G:\\College Bart\\ProjetPratique\\GregList\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|G:\\College Bart\\ProjetPratique\\GregList\\assets\\scripts\\rules\\garbagerule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rules\\garbagerule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|G:\\College Bart\\ProjetPratique\\GregList\\assets\\scripts\\rules\\rulesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rules\\rulesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|g:\\college bart\\projetpratique\\greglist\\assets\\scripts\\rules\\garbagerule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rules\\garbagerule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|G:\\College Bart\\ProjetPratique\\GregList\\assets\\scripts\\audio\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,11 +19,11 @@
       "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|g:\\college bart\\projetpratique\\greglist\\assets\\scripts\\scenetransition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|G:\\College Bart\\ProjetPratique\\GregList\\assets\\scripts\\scenetransition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenetransition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|g:\\college bart\\projetpratique\\greglist\\assets\\scripts\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|G:\\College Bart\\ProjetPratique\\GregList\\assets\\scripts\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E6231AD-1EA7-9109-E742-A211BE1FC798}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -112,7 +112,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -129,13 +129,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "RulesManager.cs",
               "DocumentMoniker": "G:\\College Bart\\ProjetPratique\\GregList\\Assets\\Scripts\\Rules\\RulesManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Rules\\RulesManager.cs",
               "ToolTip": "G:\\College Bart\\ProjetPratique\\GregList\\Assets\\Scripts\\Rules\\RulesManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Rules\\RulesManager.cs",
-              "ViewState": "AQIAAFkAAAAAAAAAAAAIwHMAAAA7AAAA",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAIwG0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-18T17:21:57.929Z",
               "IsPinned": true,
@@ -152,8 +152,7 @@
               "ViewState": "AQIAABQAAAAAAAAAAAAQwHMAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-04T19:26:38.456Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -165,8 +164,7 @@
               "RelativeToolTip": "Assets\\Scripts\\SceneTransition.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T02:56:49.045Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T02:56:49.045Z"
             },
             {
               "$type": "Document",
@@ -190,8 +188,7 @@
               "RelativeToolTip": "Assets\\Scripts\\HUD.cs",
               "ViewState": "AQIAAIMAAAAAAAAAAAAswJwAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T14:35:17.504Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-17T14:35:17.504Z"
             },
             {
               "$type": "Document",
@@ -219,13 +216,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GarbageRule.cs",
               "DocumentMoniker": "G:\\College Bart\\ProjetPratique\\GregList\\Assets\\Scripts\\Rules\\GarbageRule.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Rules\\GarbageRule.cs",
               "ToolTip": "G:\\College Bart\\ProjetPratique\\GregList\\Assets\\Scripts\\Rules\\GarbageRule.cs",
               "RelativeToolTip": "Assets\\Scripts\\Rules\\GarbageRule.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAUwEAAAAAeAAAA",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAxwEAAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-06T22:49:19.564Z",
               "EditorCaption": ""
@@ -276,8 +273,7 @@
               "RelativeToolTip": "Assets\\Scripts\\MainMenu.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T16:32:57.18Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-04T16:32:57.18Z"
             },
             {
               "$type": "Document",

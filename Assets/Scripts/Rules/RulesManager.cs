@@ -113,7 +113,7 @@ public class RulesManager : MonoBehaviour
         foreach (RulesByMoment rule in m_LevelRules)
         {
             int selection = Random.Range(0, rule.AvailableRules.Count);
-            m_CurrentSessionRules.Add(rule.AvailableRules[1]);
+            m_CurrentSessionRules.Add(rule.AvailableRules[selection]);
         }
     }
 
