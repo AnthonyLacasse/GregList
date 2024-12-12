@@ -51,7 +51,6 @@ public class BedtimeRule : Rule
             foreach (Portrait portrait in allPortraits)
             {
                 portrait.SetBadMood(true);
-                portrait.SetInteractibility(false);
             }
         }
         else
@@ -70,18 +69,16 @@ public class BedtimeRule : Rule
     }
 
     public override void OnRuleObjectUsed(Portrait portrait, EBookTitle book)
-    {
+   {
         interactedPortraits++;
         if(book == portrait.FavoriteBook)
         {
             portrait.SetBadMood(false);
-            portrait.SetInteractibility(false);
             soothedPortraits++;
         }
         else
         {
             RulesManager.Instance.Strike();
-            portrait.SetInteractibility(false);
         }
         RulesManager.Instance.ForwardTime(1, 0);
         CheckCompletion();

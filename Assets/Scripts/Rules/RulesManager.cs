@@ -149,12 +149,16 @@ public class RulesManager : MonoBehaviour
     public PlayerControl GetPlayer() { return m_Player; }
 
     public bool PlayerCanEscape() { return Escape; }
-
-    public List<Transform> GetRuleSpawnPoints() { return RulesSpawnPositions[m_CurrentRule]; }
+       
 
     public void Strike()
     {
         m_Strike++;
+        /*if(m_Strike == 1)
+        {
+        afficher le m_HUD.TutoStrike();
+         
+         */
         AudioManager.Instance.PlaySound(EClipType.STRIKE);
         m_Hud.WriteInRed(m_CurrentRule);
         Debug.Log("Strike");

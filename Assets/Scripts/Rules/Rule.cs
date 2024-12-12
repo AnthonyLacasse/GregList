@@ -14,6 +14,6 @@ public abstract class Rule : ScriptableObject
     public virtual void Update() { }
     public virtual void OnRuleObjectUsed() { }
     public virtual void OnRuleObjectUsed(Disposable obj) { }
-
     public virtual void OnRuleObjectUsed(Portrait portrait, EBookTitle book) { }
+    public virtual void OnRuleObjectUsed(LightSwitch light) { }
 }

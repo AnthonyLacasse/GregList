@@ -12,14 +12,16 @@ public enum EPortrait
 
 
 
-public class Portrait : MonoBehaviour
+public class Portrait : MonoBehaviour, Interactable
 {
     [SerializeField] private Transform m_Eyes;
     [SerializeField] private GameObject m_UncannyVersion;
     [SerializeField] private EBookTitle m_FavoriteBook;
     
-
+    private BoxCollider m_BoxCollider;
     private bool isGazing = false;
+    private bool m_CanInteract = false;
+    private PlayerControl m_Player;
 
     private Coroutine m_PortraitRoutine;
 
@@ -33,12 +35,13 @@ public class Portrait : MonoBehaviour
     public void SetBadMood(bool mood)
     {
         m_UncannyVersion.SetActive(mood);
+        m_CanInteract = mood;
+        m_BoxCollider = GetComponent<BoxCollider>();
+        m_BoxCollider.size = new Vector3(0.2f, 0.25f, 0.09f);
+        m_BoxCollider.center = new Vector3(0.002f, 0.1f, 0.07f);
+        m_Player = FindObjectOfType<PlayerControl>();
     }
-
-    public void SetInteractibility(bool interactibility)
-    {
-        //  canInteract = interactibility;
-    }
+     
 
 
     public IEnumerator PortraitGazeRoutine()
@@ -55,6 +58,9 @@ public class Portrait : MonoBehaviour
                 {
                     Debug.Log("Player Detected");
                     m_UncannyVersion.SetActive(true);
+                    RulesManager.Instance.Strike();
+                    isGazing = false;
+                    StopCoroutine(m_PortraitRoutine);
                 }
             }
             yield return null;
@@ -77,7 +83,7 @@ public class Portrait : MonoBehaviour
     {
         PlayerControl player = other.GetComponent<PlayerControl>();
 
-        if (player != null && isGazing)
+        if (player != null)
         {
             if (m_PortraitRoutine != null)
             {
@@ -92,4 +98,25 @@ public class Portrait : MonoBehaviour
 
     }
 
+    public void InRange(bool inRange)
+    {
+        
+    }
+
+    public bool CanInteract()
+    {
+        return m_CanInteract;
+    }
+
+    public void Use()
+    {
+        RulesManager.Instance.GetActiveRule().OnRuleObjectUsed(this, m_Player.HeldItem);
+        m_Player.StashBook();
+    }
+
+    public void PortraitGaze()
+    {
+        isGazing = true;
+        m_UncannyVersion.SetActive(false);        
+    }
 }

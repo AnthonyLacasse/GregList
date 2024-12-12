@@ -311,6 +311,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LadyPortrait
       objectReference: {fileID: 0}
+    - target: {fileID: 8994928122896932435, guid: d2fdb08bf4ada3a468116aa81d86bba8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6913548134864999690, guid: d2fdb08bf4ada3a468116aa81d86bba8, type: 3}
     m_RemovedGameObjects: []
@@ -361,8 +365,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.375, y: 0.8, z: 0.65}
-  m_Center: {x: 0.015, y: -0.02, z: 0.35}
+  m_Size: {x: 0.2, y: 0.67, z: 0.75}
+  m_Center: {x: 0.002, y: -0.125, z: 0.4}
 --- !u!114 &5304615817612815495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,3 +381,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Eyes: {fileID: 8485328060293347891}
   m_UncannyVersion: {fileID: 7891916305718345686}
+  m_FavoriteBook: 4

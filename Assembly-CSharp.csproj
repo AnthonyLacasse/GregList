@@ -107,6 +107,7 @@
     <Compile Include="Assets\Scripts\Rules\NoonRule.cs" />
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
     <Compile Include="Assets\Scenes\Gyms\TIme&amp;Sky\Button.cs" />
+    <Compile Include="Assets\Scripts\Rules\LightsOffRule.cs" />
     <Compile Include="Assets\Scripts\Exercices\CinemachineScript.cs" />
     <Compile Include="Assets\Scripts\Rules\Rule.cs" />
     <Compile Include="Assets\Azure[Sky] Dynamic Skybox\Scenes\_Utilities\AzureSliderToTime.cs" />

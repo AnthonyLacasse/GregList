@@ -21,8 +21,7 @@ public class PlayerControl : MonoBehaviour
     private Transform m_PlayerView;
     private Vector3 m_InitialSize;
     private bool m_SeeNote = true;
-    private bool m_InPortraitRange = false;
-    private Portrait m_Portrait;
+    
 
     private EBookTitle m_HeldItem = EBookTitle.NONE;
     public EBookTitle HeldItem => m_HeldItem;
@@ -114,15 +113,6 @@ public class PlayerControl : MonoBehaviour
             m_UsableObject = null;
             m_HUD.HidePrompt();
         }
-
-        if (m_InPortraitRange && Input.GetMouseButtonDown(0))
-        {            
-            if (m_HeldItem != EBookTitle.NONE)
-            {
-                RulesManager.Instance.GetActiveRule().OnRuleObjectUsed(m_Portrait, m_HeldItem);
-            }
-        }
-
     }
 
     private void ReadNote()
@@ -150,13 +140,6 @@ public class PlayerControl : MonoBehaviour
         {
             AudioManager.Instance.PlayTheme(room.Theme);
         }
-        Portrait portrait = other.GetComponent<Portrait>();
-        if (portrait != null && m_HeldItem != EBookTitle.NONE)
-        {
-            m_Portrait = portrait;
-            m_HUD.DisplayPrompt(portrait.GetType());
-            m_InPortraitRange = true;
-        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -165,13 +148,7 @@ public class PlayerControl : MonoBehaviour
         {
             AudioManager.Instance.StopTheme();
             m_VisitingRoom?.Invoke(other.gameObject);
-        }
-        Portrait portrait = other.GetComponent<Portrait>();
-        if (portrait != null)
-        {
-            m_Portrait = null;
-            m_HUD.HidePrompt();
-            m_InPortraitRange = false;
+            
         }
     }
 
@@ -185,9 +162,6 @@ public class PlayerControl : MonoBehaviour
         m_HeldItem = EBookTitle.NONE;
         m_HUD.OnItemChanged(m_HeldItem);
     }
-     
-
-
 
     public void LoseGame()
     {

@@ -28,6 +28,7 @@ public class Level : MonoBehaviour
 {
     [SerializeField] private List<TransformByType> m_Transforms;
     [SerializeField] private List<Shelf> m_LevelShelves;
+    [SerializeField] private List<LightSwitch> m_LevelLightswitches;
     
     private Dictionary<ERuleType, List<Transform>> m_Positions = new();
 
@@ -47,6 +48,10 @@ public class Level : MonoBehaviour
     public List<Shelf> GetLevelShelves()
     {
         return m_LevelShelves;
+    }
+    public List<LightSwitch> GetLevelLightswitches()
+    {
+        return m_LevelLightswitches;
     }
 
     public List<Transform> GetLevelTransforms(ERuleType type)

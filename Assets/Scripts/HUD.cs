@@ -22,7 +22,7 @@ public class HUD : MonoBehaviour
     [SerializeField] private TextMeshProUGUI m_RuleTextPrefab;
     [SerializeField] private SceneTransition m_SceneTransition;
     [SerializeField] private Image m_HeldItem;
-    [SerializeField] private List<Image> m_HeldItems;
+    [SerializeField] private List<Material> m_HeldItems;
 
 
     private Vector3 m_RulesHiddenPosition;
@@ -188,7 +188,7 @@ public class HUD : MonoBehaviour
         }
         else
         {
-            m_HeldItem = m_HeldItems[(int)HeldItem];
+            m_HeldItem.material = m_HeldItems[(int)HeldItem];
             m_HeldItem.color = Color.white;
         }
     }
