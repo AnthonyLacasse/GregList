@@ -66,17 +66,20 @@ public class RulesManager : MonoBehaviour
     {
         if (m_Instance != null && m_Instance != this)
         {
-            Destroy(this.gameObject);
-        }
-        else
-        {
-            m_Instance = this;
+            Destroy(gameObject);
+            return;
         }
 
+        m_Instance = this;
+        //DontDestroyOnLoad(gameObject); Ensure persistence across scenes if needed
+        Initialize();
+    }
+
+    private void Initialize()
+    {
         m_Hours = 8;
         m_Minutes = 0;
         float timeLine = m_Hours + (m_Minutes / 60);
-
         m_Sky.SetTimeline(timeLine);
 
         SetSessionRules();
@@ -85,34 +88,35 @@ public class RulesManager : MonoBehaviour
     }
 
 
-    public void ForwardTime(int hour, int minutes)
+    public void ForwardTime(int hours, int minutes)
     {
-
-        m_Hours += hour;
         m_Minutes += minutes;
-
-
-        if (m_Hours >= 24)
+        if (m_Minutes < 0)
         {
-            m_Hours = 0;
+            m_Minutes += 60;
+            m_Hours--;
         }
-
         if (m_Minutes >= 60)
         {
             m_Minutes -= 60;
             m_Hours++;
         }
 
-        float timeLine = m_Hours + (m_Minutes / 60);
-        Debug.Log($"The time is : {timeLine}");
-        m_Sky.SetTimeline(timeLine);
+        m_Hours += hours;
+        if (m_Hours < 0) m_Hours += 24;
+        if (m_Hours >= 24) m_Hours -= 24;
 
+        float timeLine = m_Hours + (m_Minutes / 60f);
+        Debug.Log($"The time is: {timeLine}");
+        m_Sky.SetTimeline(timeLine);
     }
 
     private void SetSessionRules()
     {
         foreach (RulesByMoment rule in m_LevelRules)
         {
+            if (rule.AvailableRules == null || rule.AvailableRules.Count == 0) continue;
+
             int selection = Random.Range(0, rule.AvailableRules.Count);
             m_CurrentSessionRules.Add(rule.AvailableRules[selection]);
         }
@@ -121,18 +125,23 @@ public class RulesManager : MonoBehaviour
     public void PlacePortraits()
     {
         List<Transform> spawnPoints = GetSpawnPoints(ERuleType.PORTRAITS);
+
+        if (spawnPoints.Count < m_Portraits.Count)
+        {
+            Debug.LogWarning("Not enough spawn points for all portraits!");
+            return;
+        }
+
         List<Transform> spawnLocations = new List<Transform>();
-
-
-        for (int i = 0; i < m_Portraits.Count; i++)                                     //Populate transform list with X random spawn points from the global list
+        for (int i = 0; i < m_Portraits.Count; i++)
         {
             int randomPoint = Random.Range(0, spawnPoints.Count);
             spawnLocations.Add(spawnPoints[randomPoint]);
-            spawnPoints.Remove(spawnPoints[randomPoint]);
+            spawnPoints.RemoveAt(randomPoint);
         }
 
         int portrait = 0;
-        foreach (Transform spawn in spawnLocations)                                    //Spawn a different portrait on each location
+        foreach (Transform spawn in spawnLocations)
         {
             Portrait painting = Instantiate(m_Portraits[portrait], spawn);
             runPortraits.Add(painting);

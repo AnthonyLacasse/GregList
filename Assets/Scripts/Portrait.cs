@@ -30,23 +30,23 @@ public class Portrait : MonoBehaviour, Interactable
     private void Start()
     {
         m_UncannyVersion.SetActive(false);
+        m_BoxCollider = GetComponent<BoxCollider>();
     }
 
     public void SetBadMood(bool mood)
     {
         m_UncannyVersion.SetActive(mood);
-        m_CanInteract = mood;
-        m_BoxCollider = GetComponent<BoxCollider>();
+        m_CanInteract = mood;  
         m_BoxCollider.size = new Vector3(0.2f, 0.25f, 0.09f);
         m_BoxCollider.center = new Vector3(0.002f, 0.1f, 0.07f);
         m_Player = FindObjectOfType<PlayerControl>();
     }
-     
+
 
 
     public IEnumerator PortraitGazeRoutine()
     {
-        while (true)
+        while (isGazing)
         {
             Debug.DrawRay(m_Eyes.position, m_Eyes.forward * 2, Color.red);
             if (Physics.Raycast(m_Eyes.position, m_Eyes.forward, out RaycastHit hitInfo, 2.0f))
@@ -59,12 +59,12 @@ public class Portrait : MonoBehaviour, Interactable
                     Debug.Log("Player Detected");
                     m_UncannyVersion.SetActive(true);
                     RulesManager.Instance.Strike();
-                    isGazing = false;
-                    StopCoroutine(m_PortraitRoutine);
+                    isGazing = false; // End gaze behavior
                 }
             }
             yield return null;
         }
+        m_PortraitRoutine = null; // Reset coroutine reference
     }
 
     private void OnTriggerEnter(Collider other)
@@ -110,8 +110,15 @@ public class Portrait : MonoBehaviour, Interactable
 
     public void Use()
     {
-        RulesManager.Instance.GetActiveRule().OnRuleObjectUsed(this, m_Player.HeldItem);
-        m_Player.StashBook();
+        if (m_Player != null && m_Player.HeldItem != EBookTitle.NONE)
+        {
+            RulesManager.Instance.GetActiveRule().OnRuleObjectUsed(this, m_Player.HeldItem);
+            m_Player.StashBook();
+        }
+        else
+        {
+            Debug.LogWarning("Player or HeldItem is null in Portrait.Use()");
+        }
     }
 
     public void PortraitGaze()

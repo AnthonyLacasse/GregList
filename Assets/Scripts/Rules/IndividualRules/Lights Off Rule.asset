@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b85194949ff20be4d8048e07f8844eba, type: 3}
+  m_Name: Lights Off Rule
+  m_EditorClassIdentifier: 
+  ruleDescription:
+  - 'Would you kindly prepare the house for the night ? '
+  - 'Abby is a little trickster and will turn lights on from time to time. '
+  - 'Simply round around the house and make sure all lights are turned off, for good. '
+  - Oh, and the paintings don't like to be disturbed around that time, so make sure
+    you don't enter their gaze... They won't like it.
+  - 'Luckily for you, they have a hard time to see bellow them, so use this to your
+    advantage. '
+  ruleType: 1
+  m_LuckyNumber: 7

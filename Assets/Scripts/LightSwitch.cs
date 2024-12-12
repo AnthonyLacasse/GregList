@@ -7,6 +7,7 @@ public class LightSwitch : MonoBehaviour, Interactable
 
     private Color initialColor;
     private bool m_CanInteract = false;
+    private bool m_LightsOn = true; // Track light state
 
     void Start()
     {
@@ -18,35 +19,44 @@ public class LightSwitch : MonoBehaviour, Interactable
         if (inRange && m_CanInteract)
         {
             GetComponent<Renderer>().material.color = Color.yellow;
-
         }
-        else //off
+        else // Reset to off color
         {
             GetComponent<Renderer>().material.color = initialColor;
         }
-
     }
 
     public void Use()
     {
-        AudioManager.Instance.PlaySound(EClipType.LIGHTSWITCH);
-        foreach (Light light in m_Lights)
+        if (m_CanInteract)
         {
-            light.enabled = false;
-            m_CanInteract = false;
+            AudioManager.Instance.PlaySound(EClipType.LIGHTSWITCH);
+
+            // Toggle light state
+            m_LightsOn = !m_LightsOn;
+
+            foreach (Light light in m_Lights)
+            {
+                light.enabled = m_LightsOn;
+            }
+
+            // Allow interaction only if lights are off
+            m_CanInteract = m_LightsOn;
+
+            RulesManager.Instance.GetActiveRule().OnRuleObjectUsed(this);
         }
-        RulesManager.Instance.GetActiveRule().OnRuleObjectUsed(this);
     }
 
     public void TurnLightsOn()
     {
+        // Explicitly turn lights on
+        m_LightsOn = true;
         foreach (Light light in m_Lights)
         {
             light.enabled = true;
-            m_CanInteract = true;
         }
+        m_CanInteract = true;
     }
-
 
     InteractibleType Interactable.GetType()
     {

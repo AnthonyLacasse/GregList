@@ -29,19 +29,17 @@ public class LightsOffRule : Rule
             switches.TurnLightsOn();
         }
 
-        RulesManager.Instance.GetPlayer().m_VisitingRoom += VisitedRoom;
+        if (RulesManager.Instance.GetPlayer() != null)
+        {
+            RulesManager.Instance.GetPlayer().m_VisitingRoom += VisitedRoom;
+        }
     }
     public override void CheckCompletion()
     {
-        foreach (LightSwitch switches in m_Switches)
-            //Rule ends if all LightSwitches are turned off for good
+        if (m_TurnedOffForGood.Count == m_Switches.Count)
         {
-            if (!m_TurnedOffForGood.Contains(switches))
-            {
-                return;
-            }
+            End();
         }
-        End();
     }
 
     public override void End()
@@ -50,27 +48,37 @@ public class LightsOffRule : Rule
         RulesManager.Instance.RuleCompleted();
     }
 
-    public override void OnRuleObjectUsed(LightSwitch light) 
-        //Call this function when you use the specific object for this rule. 
-        //Generate a random number to see if the light will turn back on again or not.
-    { 
-        if (Random.Range(0, 100) % m_LuckyNumber != 0)
+    public override void OnRuleObjectUsed(LightSwitch light)
+    //Call this function when you use the specific object for this rule. 
+    //Generate a random number to see if the light will turn back on again or not.
+    {
+        int chance = Random.Range(0, 100);
+
+        if (chance % m_LuckyNumber != 0)
         {
             m_TurnedOffForGood.Add(light);
         }
     }
 
     private void VisitedRoom(GameObject room)
-        //Turn back on all lights not turned off for good
+    //Turn back on all lights not turned off for good
     {
+        bool anyLightTurnedOn = false;
+
         foreach (LightSwitch light in m_Switches)
         {
-            if(!m_TurnedOffForGood.Contains(light))
+            if (!m_TurnedOffForGood.Contains(light))
             {
                 light.TurnLightsOn();
-                AudioManager.Instance.PlaySound(EClipType.LIGHTSWITCH);
+                anyLightTurnedOn = true;
             }
         }
+
+        if (anyLightTurnedOn)
+        {
+            AudioManager.Instance.PlaySound(EClipType.LIGHTSWITCH);
+        }
+
         CheckCompletion();
     }
 }

@@ -1,6 +1,7 @@
 using System;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -9,8 +10,10 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] private float m_JogSpeed = 9f;
     [SerializeField] private float m_RayLenght = 1.5f;
     [SerializeField] private Transform m_Head;
-    [SerializeField] private Transform m_Hand;
     [SerializeField] private HUD m_HUD;
+    [SerializeField] private Scrollbar m_Scrollbar;
+    [SerializeField] private ScrollRect m_ScrollRect;
+    [SerializeField] private float m_ScrollSpeed = 1.0f;
     [SerializeField] LayerMask PlayerLayer;
 
     private Interactable m_UsableObject;
@@ -117,6 +120,8 @@ public class PlayerControl : MonoBehaviour
 
     private void ReadNote()
     {
+        float scrollInput = Input.GetAxis("Mouse ScrollWheel");
+
         if (RulesManager.Instance.GetListCollected() && Input.GetKeyDown(KeyCode.Tab))
         {
             if (m_SeeNote)
@@ -125,13 +130,21 @@ public class PlayerControl : MonoBehaviour
                 m_HUD.HideNote();
 
             }
-            else //if (!m_SeeNote)
+            else 
             {
                 m_SeeNote = true;
                 m_HUD.DisplayNote();
+                
             }
         }
+        if(m_SeeNote && scrollInput !=0)
+        {
+            m_Scrollbar.value -= scrollInput * m_ScrollSpeed;
+            m_Scrollbar.value = Mathf.Clamp01(m_Scrollbar.value);
+            m_ScrollRect.verticalNormalizedPosition = m_Scrollbar.value;
+        }
     }
+
 
     private void OnTriggerEnter(Collider other)
     {

@@ -47,6 +47,7 @@ public class HUD : MonoBehaviour
     public void WriteNote()
     {
         List<Rule> rules = RulesManager.Instance.GetRules();
+        string endOfNote = "You can press TAB at any moment to read this note. Refer to it whenever you feel you need some help";
 
         foreach (Rule rule in rules)
         {
@@ -59,6 +60,9 @@ public class HUD : MonoBehaviour
 
             m_RulesOnNote.Add(current);
         }
+        TextMeshProUGUI LastNote = Instantiate(m_RuleTextPrefab, m_TextContent.transform);
+        LastNote.text = endOfNote;
+        m_RulesOnNote.Add(LastNote);
     }
 
     public void DisplayPrompt(InteractibleType type)
