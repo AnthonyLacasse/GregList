@@ -29,6 +29,7 @@ public class RulesManager : MonoBehaviour
 
     [SerializeField] private AzureTimeController m_Sky;
     [SerializeField] private List<RulesByMoment> m_LevelRules;
+    [SerializeField] private List<Portrait> m_Portraits;
     [SerializeField] private HUD m_Hud;
     [SerializeField] private Level m_Level;
 
@@ -38,13 +39,11 @@ public class RulesManager : MonoBehaviour
     [SerializeField] private int m_MaxStrikes;
 
     private bool ListCollected = false;
-    private bool PortraitsActive = false;
-    private bool TimeToRead = false;
     private bool Escape = true;
 
     private int m_CurrentRule;
     private int m_Strike;
-   
+
 
 
     private int m_Hours;
@@ -52,8 +51,9 @@ public class RulesManager : MonoBehaviour
 
     private List<List<Transform>> RulesSpawnPositions = new();
     private List<Rule> m_CurrentSessionRules = new();
+    private List<Portrait> runPortraits = new();
 
-
+    public Level Level => m_Level;
     public static RulesManager Instance
     {
         get
@@ -81,8 +81,9 @@ public class RulesManager : MonoBehaviour
 
         SetSessionRules();
         m_CurrentRule = 0;
+        m_Strike = 0;
     }
-    
+
 
     public void ForwardTime(int hour, int minutes)
     {
@@ -105,7 +106,7 @@ public class RulesManager : MonoBehaviour
         float timeLine = m_Hours + (m_Minutes / 60);
         Debug.Log($"The time is : {timeLine}");
         m_Sky.SetTimeline(timeLine);
-        
+
     }
 
     private void SetSessionRules()
@@ -117,15 +118,34 @@ public class RulesManager : MonoBehaviour
         }
     }
 
-    
+    public void PlacePortraits()
+    {
+        List<Transform> spawnPoints = GetSpawnPoints(ERuleType.PORTRAITS);
+        List<Transform> spawnLocations = new List<Transform>();
+
+
+        for (int i = 0; i < m_Portraits.Count; i++)                                     //Populate transform list with X random spawn points from the global list
+        {
+            int randomPoint = Random.Range(0, spawnPoints.Count);
+            spawnLocations.Add(spawnPoints[randomPoint]);
+            spawnPoints.Remove(spawnPoints[randomPoint]);
+        }
+
+        int portrait = 0;
+        foreach (Transform spawn in spawnLocations)                                    //Spawn a different portrait on each location
+        {
+            Portrait painting = Instantiate(m_Portraits[portrait], spawn);
+            runPortraits.Add(painting);
+            portrait++;
+        }
+    }
+
     public List<Transform> GetSpawnPoints(ERuleType type) { return m_Level.GetLevelTransforms(type); }
-       
-    public bool GetPortraitMode()   { return PortraitsActive;  }
-    public void SetPortaitMode(bool portraitBehaviour) {PortraitsActive = portraitBehaviour; }
+
+    public List<Portrait> GetPortraits() { return runPortraits; }
+    
     public bool GetListCollected() { return ListCollected; }
     public void SetListCollected() { ListCollected = true; }
-    public void SetReadTime(bool isTime) { TimeToRead = isTime; }
-    public bool GetReadTime() { return TimeToRead; }
     public PlayerControl GetPlayer() { return m_Player; }
 
     public bool PlayerCanEscape() { return Escape; }
@@ -138,7 +158,7 @@ public class RulesManager : MonoBehaviour
         AudioManager.Instance.PlaySound(EClipType.STRIKE);
         m_Hud.WriteInRed(m_CurrentRule);
         Debug.Log("Strike");
-        if(m_Strike >= m_MaxStrikes)
+        if (m_Strike >= m_MaxStrikes)
         {
             LoseGame();
         }
@@ -160,7 +180,7 @@ public class RulesManager : MonoBehaviour
                 LoseGame();
                 return;
             }
-        m_Exit.SetActive(false);
+            m_Exit.SetActive(false);
             return;
         }
         m_CurrentSessionRules[m_CurrentRule].Init();
@@ -181,7 +201,7 @@ public class RulesManager : MonoBehaviour
         return descriptionList;
     }
 
-    public Rule GetActiveRule() {  return m_CurrentSessionRules[m_CurrentRule]; }
+    public Rule GetActiveRule() { return m_CurrentSessionRules[m_CurrentRule]; }
 
     public void LoseGame()
     {

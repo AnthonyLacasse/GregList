@@ -1,10 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using Image = UnityEngine.UI.Image;
+
 
 public class HUD : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class HUD : MonoBehaviour
     [SerializeField] private CanvasGroup m_FinalTextGroup;
     [SerializeField] private TextMeshProUGUI m_RuleTextPrefab;
     [SerializeField] private SceneTransition m_SceneTransition;
+    [SerializeField] private Image m_HeldItem;
+    [SerializeField] private List<Image> m_HeldItems;
 
 
     private Vector3 m_RulesHiddenPosition;
@@ -35,6 +38,8 @@ public class HUD : MonoBehaviour
     private void Start()
     {
         m_RulesHiddenPosition = m_RulePanel.transform.localPosition;
+
+        m_HeldItem.color = new Color(0, 0, 0, 0);
 
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -89,7 +94,7 @@ public class HUD : MonoBehaviour
 
     public void HideNote()
     {
-        if(m_ShowRulesRoutine != null)
+        if (m_ShowRulesRoutine != null)
         {
             StopCoroutine(m_ShowRulesRoutine);
         }
@@ -175,4 +180,16 @@ public class HUD : MonoBehaviour
         }
     }
 
+    internal void OnItemChanged(EBookTitle HeldItem)
+    {
+        if (HeldItem == EBookTitle.NONE)
+        {
+            m_HeldItem.color = new Color(0, 0, 0, 0);
+        }
+        else
+        {
+            m_HeldItem = m_HeldItems[(int)HeldItem];
+            m_HeldItem.color = Color.white;
+        }
+    }
 }

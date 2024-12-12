@@ -27,6 +27,8 @@ public struct TransformByType
 public class Level : MonoBehaviour
 {
     [SerializeField] private List<TransformByType> m_Transforms;
+    [SerializeField] private List<Shelf> m_LevelShelves;
+    
     private Dictionary<ERuleType, List<Transform>> m_Positions = new();
 
     private void Start()
@@ -42,9 +44,17 @@ public class Level : MonoBehaviour
         }
     }
 
+    public List<Shelf> GetLevelShelves()
+    {
+        return m_LevelShelves;
+    }
+
     public List<Transform> GetLevelTransforms(ERuleType type)
     {
         return m_Positions[type];
     }
+
+   
+
 
 }

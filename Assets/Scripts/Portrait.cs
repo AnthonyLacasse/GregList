@@ -14,22 +14,32 @@ public enum EPortrait
 
 public class Portrait : MonoBehaviour
 {
-    [SerializeField] private List<Material> m_Textures; // Material pour le gym, code final doit être une texture
     [SerializeField] private Transform m_Eyes;
+    [SerializeField] private GameObject m_UncannyVersion;
+    [SerializeField] private EBookTitle m_FavoriteBook;
+    
 
-    private Renderer m_Renderer;
+    private bool isGazing = false;
 
     private Coroutine m_PortraitRoutine;
 
+    public EBookTitle FavoriteBook => m_FavoriteBook;
 
     private void Start()
     {
-        m_Renderer = GetComponent<Renderer>();
-
-        m_Renderer.material = m_Textures[(int)EPortrait.FRIENDLY];  // Material pour le Gym, code final doit être mainTexture
-
-
+        m_UncannyVersion.SetActive(false);
     }
+
+    public void SetBadMood(bool mood)
+    {
+        m_UncannyVersion.SetActive(mood);
+    }
+
+    public void SetInteractibility(bool interactibility)
+    {
+        //  canInteract = interactibility;
+    }
+
 
     public IEnumerator PortraitGazeRoutine()
     {
@@ -44,7 +54,7 @@ public class Portrait : MonoBehaviour
                 if (player != null)
                 {
                     Debug.Log("Player Detected");
-                    m_Renderer.material = m_Textures[(int)(EPortrait.UNCANNY)];
+                    m_UncannyVersion.SetActive(true);
                 }
             }
             yield return null;
@@ -53,19 +63,21 @@ public class Portrait : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+
         PlayerControl player = other.GetComponent<PlayerControl>();
 
-        if (player != null && RulesManager.Instance.GetPortraitMode())
+        if (player != null && isGazing)
         {
             m_PortraitRoutine = StartCoroutine(PortraitGazeRoutine());
         }
+
     }
 
     private void OnTriggerExit(Collider other)
     {
         PlayerControl player = other.GetComponent<PlayerControl>();
 
-        if (player != null && RulesManager.Instance.GetPortraitMode())
+        if (player != null && isGazing)
         {
             if (m_PortraitRoutine != null)
             {
@@ -74,5 +86,10 @@ public class Portrait : MonoBehaviour
         }
     }
 
+    public InteractibleType GetType()
+    {
+        return InteractibleType.BOOK;
+
+    }
 
 }

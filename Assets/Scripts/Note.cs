@@ -27,6 +27,7 @@ public class Note : MonoBehaviour, Interactable
     public void Use()
     {
         RulesManager.Instance.SetListCollected();
+        RulesManager.Instance.PlacePortraits();
         RulesManager.Instance.GetActiveRule().Init();
         m_HUD.WriteNote();
         m_HUD.DisplayNote();

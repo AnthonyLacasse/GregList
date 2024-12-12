@@ -3,6 +3,7 @@ public enum InteractibleType
     LIGHT,
     PLANT,
     DISPOSABLE,
+    BOOK,
     COLLECTIBLE,
     HIDESPOT,
 

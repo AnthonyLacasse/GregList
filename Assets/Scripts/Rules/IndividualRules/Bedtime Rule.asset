@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c447befb498637c40a1c8096ac0bd3fb, type: 3}
+  m_Name: Bedtime Rule
+  m_EditorClassIdentifier: 
+  ruleDescription:
+  - 'After some time, you might notice some changes to the portraits on the wall. '
+  - 'You will want to soothe them with a nice story to put them at ease. '
+  - 'Check out the bookshelves around the house, some of them have their favourite
+    books. '
+  - 'It will be up to you to figure out what they like. '
+  - Don't make mistakes, they won't give you a second chance.
+  ruleType: 1
+  m_Books:
+  - {fileID: 3232342138729798918, guid: 1ae91349f082ae14b8ea643cc85719ea, type: 3}
+  - {fileID: 4188997848613786889, guid: de03a880c4614114bb1b77934bd3fde3, type: 3}
+  - {fileID: -404793303263671889, guid: e7d03ebe2cd312e44800e77768d3ec1e, type: 3}
+  - {fileID: 5546304910917024648, guid: 8aa93a3c002ef544f9d2d38484dbe028, type: 3}
+  - {fileID: 342409234705002662, guid: e39db0d9b06f1c94c8f6ba4a01fc86a8, type: 3}
+  m_NbUncannyPortraits: 3
